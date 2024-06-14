@@ -1,1 +1,16 @@
 Some useful Kubernetes commands
+
+# get ingress
+kubectl get ingress -n <name_space>
+kubectl -n <name_space> get ingress -o json
+
+# check current context
+kubectl config current-context
+
+kubectl get ns
+
+# get pods
+kubectl get po -n <name_space>
+
+# get logs
+kubectl logs -n <name_space> <full_pod_name>
