@@ -1,1 +1,19 @@
-#
+# add python
+module add python/3.12.0
+
+# create vitualization
+python3 -m venv venv
+
+# activate vỉtual env
+. venv/bin/activate
+
+# install libraries
+pip ínstall requirements.txt
+
+# run app
+python main.py
+
+# start on localhost
+http://localhost:<port>/
+
+
