@@ -8,7 +8,8 @@ python3 -m venv venv
 . venv/bin/activate
 
 # install libraries
-pip ínstall requirements.txt
+pip3 íntall --upgrade pip
+pip3 ínstall -r requirements.txt
 
 # run app
 python main.py
