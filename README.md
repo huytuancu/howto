@@ -8,4 +8,5 @@ This repo helps to quickly remember "how to" for developer for public ìnformati
 
 Developer then can search more ìnformation on internet eg: using google or ChatGPT
 
-## Reader Guide
+## Reader Guide+
+Click on specific file eg: docker_commands to get more information
