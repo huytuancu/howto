@@ -12,5 +12,13 @@ import request
 - on other file, ưe can import calculate function from file.py like this:
   from file import calculate
 
-#
+# how to import functions from a library
+eg: if we want to import functions from pytest_bdd (should be added previously in requirements.txt)
+from pytest_bdd import {
+    given,
+    scenario,
+    then,
+    when,
+    parsers
+}
 
