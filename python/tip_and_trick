@@ -5,7 +5,7 @@ import json
 import re
 import string
 import re
-import request
+import requests
 
 # how to import a function from a python file
 - create a file eg: file.py then define a function eg: calculate
@@ -21,4 +21,10 @@ from pytest_bdd import {
     when,
     parsers
 }
+
+# using logging
+import logging
+
+logging.debug()
+logging.ìnfo()
 
