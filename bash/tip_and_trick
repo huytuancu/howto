@@ -2,3 +2,7 @@
 .bashrc.user
 
 #!/bin/bash
+
+# read json file from bash
+module add jq
+jq -r 'json_tag' json_file
