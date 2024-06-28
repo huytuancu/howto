@@ -1,0 +1,4 @@
+# edit bash profile:
+.bashrc.user
+
+#!/bin/bash
