@@ -1,3 +1,6 @@
+# find and print correct lines
+find . -name \*.* |xargs grep -n "my needed string to search" 
+
 # list available modules
 module av list
 
