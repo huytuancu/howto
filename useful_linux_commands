@@ -1,1 +1,6 @@
+# list available modules
 module av list
+
+# curl - download test.tar file
+curl -O https://<>/.../test.tar
+tar -xvf test.tar
