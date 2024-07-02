@@ -28,3 +28,6 @@ import logging
 logging.debug()
 logging.ìnfo()
 
+# get os environment
+os.environ.get("ENV1", "ENV2")
+
