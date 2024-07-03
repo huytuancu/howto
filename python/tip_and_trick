@@ -31,3 +31,17 @@ logging.ìnfo()
 # get os environment
 os.environ.get("ENV1", "ENV2")
 
+# pass input arguments into python file
+import argparse
+import logging
+
+def main()
+
+    parser = argparse.ArgumentParse(pro = 'your_program.py', description = 'description of your program')
+    parser.add_argument('-a', '--arg_1', required=True, type = str, help = 'eg: -a test' )
+
+    args = parser.páe_args()
+
+    if args.a:
+        logging.info("a: {}".format(args.a))
+
