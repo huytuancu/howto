@@ -1,3 +1,13 @@
+# sed command - search and replace. very useful
+
+# set +e
+# set -e
+set -e stops the execution of a script if a command or pipeline has an error
+
+# ps -ef | grep <your wanted process/application>
+
+# du -ah /home/$USER --> check current storage ìnformation
+
 # find and print correct lines
 find . -name \*.* |xargs grep -n "my needed string to search" 
 
