@@ -9,7 +9,7 @@ This repo is indeed NOT a specific product/project development
 
 Developer then can search more ìnformation on internet eg: using google or ChatGPT
 
-If you found it useful, drop email to 
+If you found it useful or further ideas that you would like to contact, drop email to 
 ## cutuanhuy@gmail.com
 
 ## Reader Guide+
