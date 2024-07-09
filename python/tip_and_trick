@@ -1,10 +1,14 @@
-# common libraries
+# define python3 & common frequenlty used libraries
+#!/usr/bin/env python3
+
 import os
 import logging
+import csv
 import json
 import re
 import string
 import re
+import time
 import requests
 
 # how to import a function from a python file
