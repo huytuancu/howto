@@ -1,5 +1,5 @@
 
-Some useful Kubernetes commands
+Some basic and useful Kubernetes (K8S) commands
 
 # get ingress
 kubectl get ingress -n <name_space>
