@@ -1,1 +1,15 @@
+# log in docker Registry
+docker login
 
+docker build -t <path_on_your_docker_registry>/<your-app-name> .
+
+# <your_new_tag> means your new release version ìf you want
+docker image tag <path_on_your_docker_registry>/your-app-name>:latest <path_on_your_docker_registry>/your-app-name>:<your_new_tag>
+
+docker image ls
+
+# push your image after built to your docker registry
+docker push <path_on_your_docker_registry>/your-app-name>:<your_new_tag>
+
+# pull your image if you want
+docker image pull <path_on_your_docker_registry>/your-app-name>:<your_new_tag>
