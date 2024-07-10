@@ -1,3 +1,8 @@
+# Pre-requisites:
+#
+# kubectl íntalled
+# Need to update /home/$USER/.kube/config file eg: download from Rancher (a K8s cluster management tool)
+#
 
 Some basic and useful Kubernetes (K8S) commands
 
