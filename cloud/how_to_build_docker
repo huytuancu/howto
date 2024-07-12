@@ -12,4 +12,15 @@ docker image ls
 docker push <path_on_your_docker_registry>/your-app-name>:<your_new_tag>
 
 # pull your image if you want
-docker image pull <path_on_your_docker_registry>/your-app-name>:<your_new_tag>
+docker pull <path_on_your_docker_registry>/your-app-name>:<your_new_tag>
+
+# additional docker commands. Can search more information on internet
+docker run
+docker ps -a 
+docker exec
+docker logs <id>
+docker stop <id>
+docker rm 
+docker save
+  eg: docker save -o <path for generated tar file> <image name>
+
