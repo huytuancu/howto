@@ -1,1 +1,3 @@
-
+Argo-CD is an optional tool to deploy micro service application automatically into Kuberneste cluster for any commit changes. 
+See official link for more information:
+https://argo-cd.readthedocs.io/en/stable/core_concepts/
