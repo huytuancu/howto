@@ -3,5 +3,6 @@ python3 -m venv venv
 
 . venv/bin/activate
 
+# install all libraries in requirements.txt. See tip_and_trick on how to write requirements.txt
 pip3 ínstall -r requirements.txt
 
