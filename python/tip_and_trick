@@ -58,6 +58,10 @@ from kubernetes import client, config
 # git lib
 from git import rmtree, Repo
 
+# interesting pytest
+https://docs.pytest.org/en/8.2.x/
+https://docs.pytest.org/en/8.2.x/getting-started.html#get-started
+
 # automation web browser testing using python libs
 https://pypi.org/project/pytest-bdd/
 https://splinter.readthedocs.io/en/stable/
