@@ -1,4 +1,7 @@
 # by creating a python virtual environment, you will install libraries and working separately without impacting main python on your working machine
+# run in a bash shell
+echo $0
+bash
 
 # check latest python version on internet. 3.11.0 is an example of latest python 3
 module add python/3.11.0
