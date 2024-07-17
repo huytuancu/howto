@@ -1,3 +1,11 @@
+# wget
+wget -c 'https://github.com/kubernetes/minikube/releases/download/v1.24.0/minikube-linux-amd64'
+
+# export new PATH to current PATH
+eg:
+echo PATH
+export PATH=/usr/local/bin/:$PATH
+
 # sed command - search and replace. very useful
 
 # set +e
