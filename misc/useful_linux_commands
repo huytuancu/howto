@@ -3,7 +3,7 @@ wget -c 'https://github.com/kubernetes/minikube/releases/download/v1.24.0/miniku
 
 # export new PATH to current PATH
 eg:
-echo PATH
+echo $PATH
 export PATH=/usr/local/bin/:$PATH
 
 # sed command - search and replace. very useful
