@@ -1,0 +1,7 @@
+# nowadays, Visual Studio is a famous tool for software development projects
+# Visual Studio ìs free to íntall on Windows
+
+# start visual studio on Linux based
+  # check latest version please
+  module add vscode/1.71.0
+  code .
