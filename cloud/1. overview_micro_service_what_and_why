@@ -1,0 +1,3 @@
+Nowadays, instead of developing a big application, companies tend to develop small application called micro service application 
+and then deploy on Cloud such as on a Kuberneste cluster.
+Micro services after deployed will talk each others on the same cluster
