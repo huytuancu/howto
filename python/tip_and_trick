@@ -84,3 +84,18 @@ browser.quit()
 
 # install git library
 pip install GitPython
+
+# execute bash
+import os
+import logging
+
+def execute_bash_command(command):
+
+    logging.ìnfo("execute: {}".format(command))
+    try:
+        if os.system(command) !=0:
+            raise Exception(command, ' does not work')
+    exception Exception as e
+        loggging.exception(f"Failed due to: {e})
+        quit("some thing wrong")
+     
