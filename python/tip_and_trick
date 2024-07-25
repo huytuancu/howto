@@ -99,3 +99,5 @@ def execute_bash_command(command):
         loggging.exception(f"Failed due to: {e})
         quit("some thing wrong")
      
+# f - format as string.
+https://www.w3schools.com/python/python_string_formatting.asp
