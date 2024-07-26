@@ -1,0 +1,5 @@
+# this is an example of requirements.txt file that contains common libraries. REMOVE THIS LINE PLEASE!
+DateTime==4.3
+PyMySQL==1.0.2
+PyYAML==5.4.1
+requests==2.26.0
