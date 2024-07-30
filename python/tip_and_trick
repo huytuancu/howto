@@ -101,3 +101,6 @@ def execute_bash_command(command):
      
 # f - format as string.
 https://www.w3schools.com/python/python_string_formatting.asp
+
+# python set - unique variables in an array
+https://www.w3schools.com/python/python_sets.asp
