@@ -105,7 +105,7 @@ https://www.w3schools.com/python/python_string_formatting.asp
 # python set - unique variables in an array
 https://www.w3schools.com/python/python_sets.asp
 
-# unique set
+# unique set - interesting and important
 global ouput
 output = set()
 # then add x into output:
