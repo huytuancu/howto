@@ -5,8 +5,23 @@ bash
 # edit bash profile:
 .bashrc.user
 
+# first line of bash
 #!/bin/bash
 
 # read json file from bash
 module add jq
 jq -r 'json_tag' json_file
+
+# define an interger in bash
+declare -i my_interger=0
+...
+# increase ìf you want
+my_interger=$my_interger+1
+
+# forever ưhile loop
+while [[ true ]]; do
+
+  # stop forever while loop:
+  break;
+
+done
