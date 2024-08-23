@@ -25,3 +25,10 @@ while [[ true ]]; do
   break;
 
 done
+
+# đisable / enable printout
+set +x # disable printout
+....
+set -x
+
+# sed is verify useful command in bash to search and replace. check internet for more info
