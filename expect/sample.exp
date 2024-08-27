@@ -1,1 +1,9 @@
+#!/usr/bin/expect --
 
+# input arguments
+set input_arg_1 "[lindex $argv 0]"
+set input_arg_2 "[lindex $argv 1]"
+set input_arg_3 "[lindex $argv 2]"
+
+# global
+set unix_promt "(> | %|#|\\\$)$"
