@@ -110,8 +110,9 @@ https://www.w3schools.com/python/python_string_formatting.asp
 https://www.w3schools.com/python/python_sets.asp
 
 # unique set - interesting and important
-global ouput
-output = set()
+output = set() # define this at main program
+global ouput # for example: define this ínside a function
+
 # then add x into output:
 output.add(x)
 print(output)
