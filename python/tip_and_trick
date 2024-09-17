@@ -105,6 +105,12 @@ def execute_bash_command(command):
      
 # f - format as string.
 https://www.w3schools.com/python/python_string_formatting.asp
+eg:
+import logging
+import string
+...
+
+logging.info(f"thís is format example containing {Variable_Name} \n)
 
 # python set - unique variables in an array
 https://www.w3schools.com/python/python_sets.asp
