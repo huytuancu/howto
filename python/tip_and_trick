@@ -122,3 +122,6 @@ global ouput # for example: define this ínside a function
 # then add x into output:
 output.add(x)
 print(output)
+
+# integrate AI tool for coding easier :D
+https://codeium.com/
