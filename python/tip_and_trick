@@ -123,6 +123,13 @@ import requests
 api = f"https://xyz/abc/?q=...."
 response = requests.get(api, auth=get_auth(), verify=False)
 
+def get_auth():
+    user = os.environ.get("YOUR_USER")
+    pass = os.environ.get("YOUR_PASS")
+    authentication = (user, pass)
+
+    return authentication
+
 # unique set - interesting and important
 output = set() # define this at main program
 global ouput # for example: define this ínside a function
