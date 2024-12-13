@@ -130,6 +130,9 @@ def get_auth():
 
     return authentication
 
+# requests.post
+response = requests.post(url, auth=get_authen(), json=payload, verify=False, headers=header)
+
 # unique set - interesting and important
 output = set() # define this at main program
 global ouput # for example: define this ínside a function
