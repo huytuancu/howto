@@ -115,6 +115,16 @@ logging.info(f"thís is format example containing {Variable_Name} \n)
 # python set - unique variables in an array
 https://www.w3schools.com/python/python_sets.asp
 
+# requests is one of critical library in python to call a web site aka (as known as) a REST API
+
+eg:
+import requests
+
+api = f"https://xyz/abc/?q=...."
+response = requests.get(api, auth=get_auth(), verify=False)
+
+
+
 # unique set - interesting and important
 output = set() # define this at main program
 global ouput # for example: define this ínside a function
