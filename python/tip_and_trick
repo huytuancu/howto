@@ -122,6 +122,8 @@ import requests
 
 api = f"https://xyz/abc/?q=...."
 response = requests.get(api, auth=get_auth(), verify=False)
+// response.txt
+// response.status_code
 
 def get_auth():
     user = os.environ.get("YOUR_USER")
