@@ -1,1 +1,4 @@
+In order to move your application to cloud you need to build your application to an image called docker image
+Then you need to create a version for you docker image called docker tag
 
+Depending on your application eg: python, .net, C/C++ etc you can follow the detail instruction on https://docs.docker.com/get-started/docker-concepts/building-images/writing-a-dockerfile/
