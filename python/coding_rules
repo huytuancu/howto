@@ -1,0 +1,7 @@
+# This file is not a mandatory file.
+# Instead, it will suggest some useful coding rules
+# Updating 
+
+- a coding file should not have more than 200 lines
+- a line shouldn't have ??? characters
+...
