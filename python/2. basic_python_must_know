@@ -17,3 +17,7 @@
 # Python - Functions
 
 # Python - OOP Concepts aka Class | advanced
+
+Python - OOP Concepts
+In the real world, we deal with and process objects, such as student, employee, invoice, car, etc. 
+Objects are not only data and not only functions, but combination of both. Each real-world object has attributes and behavior associated with it.
