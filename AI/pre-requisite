@@ -3,3 +3,6 @@
 - training data 
 - hardware for AI application (GPT, CPU... etc)
 - a cloud system aka cluster for running
+- specific AI applications including backend and frontend application
+  backend application will run servers hosted on cloud eg: Pods on Kuberneste
+  frontend application running on any hosts or smart phone that calls backend application
