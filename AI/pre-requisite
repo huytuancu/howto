@@ -1,0 +1,5 @@
+# describe needed things to build up an AI system
+
+- training data 
+- hardware for AI application (GPT, CPU... etc)
+- a cloud system aka cluster for running
