@@ -5,3 +5,9 @@
   # check latest version please
   module add vscode/1.71.0
   code .
+
+# comment out a block of code
+Ctrl + K + C
+
+# un comment out a block of code
+Ctrl + K + U
