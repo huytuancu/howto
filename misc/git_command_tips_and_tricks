@@ -1,0 +1,5 @@
+# push empty commit
+
+git commit --allow-empty -m "Commit message"
+
+git push origin HEAD:refs/for/master
