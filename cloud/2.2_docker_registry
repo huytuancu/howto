@@ -1,3 +1,5 @@
-Docker Registry is a server to store docker image after building
+Docker Registry is a server to store docker image after building your application to a docker image file
 
-Free docker registry: https://hub.docker.com/
+Free docker registry: https://hub.docker.com/. You can register for free. there is instruction on how to register
+
+Your organization can create a Docker Registry Server your self --> Search on internet or chatGPT on how to do so
