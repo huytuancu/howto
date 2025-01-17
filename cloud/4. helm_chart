@@ -1,2 +1,4 @@
 # official information:
 https://helm.sh/
+
+helm chart is a technic to deploy your docker image built to a cluster (aka K8S cluster)
