@@ -1,8 +1,8 @@
 # describe needed things to build up a whole AI system from beginning
 
 
-- core hardware for AI application (GUT, CPU... etc)
-- a cloud system aka cluster for running
+- core hardware for AI application (GPU, CPU... etc)
+- a cloud system aka cluster for running. eg: https://kubernetes.io/
 - specific AI applications including backend and frontend application
   - backend application will run on servers hosted on cloud eg: Pods on Kuberneste
   - frontend application running on any web hosts, smart phone, robot that calls backend application on cloud via internet connection
