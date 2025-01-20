@@ -1,5 +1,5 @@
 Rancher is a GUI tool to mamage K8S cluster íntead of using CLI (command line interface) to manage
-Thus Rancher is intuitive to use
+Thus Rancher is intuitive to use as an optional GUI tool to manage your cluster
 Rancher can be íntalled directly on cluster
 
 For detail information, see https://www.rancher.com/quick-start
