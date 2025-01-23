@@ -1,4 +1,4 @@
-Argo-CD is an optional tool to deploy micro service application automatically into Kubernetes cluster for any commit changes. 
+Argo-CD is an optional tool to deploy micro service application automatically into K8S cluster for any commit changes. 
 See official link for more information:
 https://argo-cd.readthedocs.io/en/stable/core_concepts/
 
@@ -18,3 +18,11 @@ key-fields:
   VALUES FILES=values.yaml
 
 then click CREATE
+
+# key fields:
+PROJECT
+CLUSTER
+NAMESPACE
+REPO URL
+TARGET REVISION (git sha)
+PATH: eg chart
