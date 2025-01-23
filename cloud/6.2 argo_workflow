@@ -4,6 +4,6 @@
 https://argo-workflows.readthedocs.io/en/latest/walk-through/hello-world/
 
 # where to write workflow template on helm repo
-chart/templates/app-temlate-handler.yaml
+chart/templates/app-workflow.yaml
 
 # create an app on argocd then you will see argo workflow deployed
