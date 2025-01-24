@@ -2,3 +2,11 @@
 https://helm.sh/
 
 helm chart is a technic to deploy your docker image built to a cluster (aka K8S cluster)
+
+Helm Chart can be a seprate folder where it defines application information eg: docker image and ingress (aka domain name) or 
+Helm Chart can be included in application folder
+
+Basic step to generate Helm Chart on Linux:
+
+...
+
