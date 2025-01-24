@@ -8,5 +8,9 @@ Helm Chart can be included in application folder
 
 Basic step to generate Helm Chart on Linux:
 
-...
+# To create a helm-chart folder
+cd templates
+helm template .
+
+# Then modify files to include docker image, ingress (DMS), etc then test it out by trying to deploy
 
