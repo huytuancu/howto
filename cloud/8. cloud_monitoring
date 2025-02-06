@@ -2,3 +2,11 @@
 
 CPU usage
 Memory usage
+
+From open source perspective, there are some tools we can ínstall and configure on the K8S cluster
+
+- Grafana | https://grafana.com/
+
+- Prometheus | https://prometheus.io/
+
+Check on the websites on detail information on how to download, install, configure
