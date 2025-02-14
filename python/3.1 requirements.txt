@@ -1,6 +1,7 @@
 #
 # requirements.txt file is to store common Python libraries you used to import into python file
 # this is an example of requirements.txt file that contains common libraries.
+# user can search latest version using ChatGPT or DeepSeek or google.com... etc
 #
 DateTime==4.3
 PyMySQL==1.0.2
