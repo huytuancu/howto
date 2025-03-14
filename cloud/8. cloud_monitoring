@@ -1,13 +1,16 @@
-# this file will describe briefly about how to monitor cluster such as 
 # aka Monitoring and Observability
+# this file will describe briefly about how to monitor cluster such as 
 
-CPU usage
-Memory usage
-... and more
+on a specific application instance aka Pod in K8S
+
+- CPU usage
+- Memory usage
+... and more eg: metrics during a time period
 
 From open source perspective, there are some tools we can ínstall and configure on the K8S cluster
+or on AWS cloud
 
-- Prometheus | https://prometheus.io/ --> fetch data then update database
+- Prometheus | https://prometheus.io/ --> fetch data then update into database
 - Grafana | https://grafana.com/ --> visualize daskboard using imported data from Prometheus
 
 Check on the websites on detail information on how to download, install, configure
