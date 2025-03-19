@@ -1,0 +1,2 @@
+# .netrc file on Linux based is an important file to store credentials (users, passowrds) for applications to authenticate 
+# example of .netrc file:
