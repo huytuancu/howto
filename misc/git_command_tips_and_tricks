@@ -1,3 +1,6 @@
+# reset to master branch
+git reset --hard origin/master
+
 # push empty commit
 
 git commit --allow-empty -m "Commit message"
