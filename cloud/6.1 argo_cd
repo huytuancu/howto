@@ -1,14 +1,14 @@
-Argo-CD is an optional tool to deploy micro service application automatically into K8S cluster for any commit changes. 
+Argo-CD is an optional tool to easily deploy micro service application automatically into K8S cluster using HELM-CHART. 
 See official link for more information:
 https://argo-cd.readthedocs.io/en/stable/core_concepts/
 
-# create an argo-cd application. Important fields to input:
-
 https://argo-cd.readthedocs.io/en/stable/getting_started/
+
+----------------------------------------------------------------------------------------------------------------------
 
 key-fields:
 
-1. General
+I. General
 
 Application Name: your_app_name
 
@@ -19,14 +19,14 @@ CLUSTER: https://kubernetes.default.svc
 NAMESPACE
 # repo url shall be git server or on storage server that stores HELM package
 
-2. Source
+II. Source
 
 REPO URL
 TARGET REVISION (git sha)
 PATH: eg chart
 
-3. Destination
+III. Destination
 Cluster URL: https://kubernetes.default.svc
 
-4. PẨRAMETERS > Select Helm in drop box and add
+IV. PẨRAMETERS > Select Helm in drop box and add
   VALUES FILES=values.yaml
