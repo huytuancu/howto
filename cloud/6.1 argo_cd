@@ -26,6 +26,7 @@ TARGET REVISION (git sha)
 PATH: eg chart
 
 3. Destination
+Cluster URL: https://kubernetes.default.svc
 
-4. Select Helm in drop box and add
+4. PẨRAMETERS > Select Helm in drop box and add
   VALUES FILES=values.yaml
