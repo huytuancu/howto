@@ -21,8 +21,10 @@ then click CREATE
 
 # key fields:
 PROJECT
-CLUSTER
+CLUSTER: https://kubernetes.default.svc
+# target namespace on K8S cluster
 NAMESPACE
+# repo url shall be git server or on storage server that stores HELM package
 REPO URL
 TARGET REVISION (git sha)
 PATH: eg chart
