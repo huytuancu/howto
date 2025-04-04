@@ -10,21 +10,22 @@ key-fields:
 
 1. General
 
+Application Name: your_app_name
+
+PROJECT: 
+
+CLUSTER: https://kubernetes.default.svc
+# target namespace on K8S cluster
+NAMESPACE
+# repo url shall be git server or on storage server that stores HELM package
+
 2. Source
+
+REPO URL
+TARGET REVISION (git sha)
+PATH: eg chart
 
 3. Destination
 
 4. Select Helm in drop box and add
   VALUES FILES=values.yaml
-
-then click CREATE
-
-# key fields:
-PROJECT
-CLUSTER: https://kubernetes.default.svc
-# target namespace on K8S cluster
-NAMESPACE
-# repo url shall be git server or on storage server that stores HELM package
-REPO URL
-TARGET REVISION (git sha)
-PATH: eg chart
