@@ -145,3 +145,15 @@ print(output)
 
 # integrate AI tool for coding easier :D
 https://codeium.com/
+
+--------------------------------------------------------------------------------------------
+# coverage
+pip install coverage
+
+# run coverage test on bash
+coverage run -m pytestt
+
+# check report
+coverage report
+coverage html
+--------------------------------------------------------------------------------------------
