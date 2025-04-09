@@ -4,7 +4,7 @@ echo $0
 bash
 
 # check latest python version on internet. 3.11.0 is an example of latest python 3
-module add python/3.11.9
+module add python/3.11.10
 python3 -m venv venv
 
 # activate virtualization
