@@ -7,6 +7,11 @@ Helm Chart can be a seprate folder where it defines application information eg: 
 Helm Chart can be included in application folder
 
 Basic step to generate Helm Chart on Linux:
+# add helm and check helm version
+bash
+module add helm
+
+helm version
 
 # To create a helm-chart folder
 cd templates
