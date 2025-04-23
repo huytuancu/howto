@@ -5,6 +5,10 @@ bash
 # edit bash profile:
 .bashrc.user
 
+eg:
+module add python/3.9.11
+module add helm
+
 # first line of bash
 #!/bin/bash
 
@@ -32,3 +36,5 @@ set +x # disable printout
 set -x
 
 # sed is verify useful command in bash to search and replace. check internet for more info
+eg: search word ưith source then replace by destination
+sed s,/source/,/destination/,g 
