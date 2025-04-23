@@ -1,6 +1,7 @@
 # log in docker Registry
 docker login
 
+# you need to have Docker Registry (a special server to store images) path where later on will store your docker images
 docker build -t <path_on_your_docker_registry>/<your-app-name> .
 
 # <your_new_tag> means your new release version ìf you want
