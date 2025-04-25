@@ -1,0 +1,15 @@
+# this is an example of Dockerfile
+FROM
+
+RUN
+
+ARG
+
+LABEL \
+
+ENV \
+
+RUN 
+
+# run the app.py
+CMD ["python3", "app/app.py"]
