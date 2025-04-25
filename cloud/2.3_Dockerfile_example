@@ -1,4 +1,4 @@
-# this is an example of Dockerfile
+# this is an example of Dockerfile for python
 FROM
 
 RUN
