@@ -1,0 +1,6 @@
+# we can build docker image locally using docker ínstalled on build server eg: Jenkins or local development pc
+# however on K8S cluster we may have other alternatives to build docker image
+# kaniko is an option to build docker image on K8s cluster
+# we need to deploy kaniko application on K8S before usingg it
+
+https://github.com/GoogleContainerTools/kaniko
