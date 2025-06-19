@@ -8,4 +8,9 @@ For detail information, see https://www.rancher.com/quick-start
 
 - how to download KubeConfig and store it in your local ~/.kube/config file
 - select correct namespace you want to work
+- Important folders:
+  + Workloads stores Pods information
+  + Storage stores setup ìnformation for your applications
+  + Monitoring stores live mornitoring information eg: Grafana etc
+  + ...
 
