@@ -3,3 +3,9 @@ Thus Rancher is intuitive to use as an optional GUI tool to manage your cluster
 Rancher can be íntalled directly on cluster
 
 For detail information, see https://www.rancher.com/quick-start
+
+# key things you need to know
+
+- how to download KubeConfig and store it in your local ~/.kube/config file
+- select correct namespace you want to work
+
