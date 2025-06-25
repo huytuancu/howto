@@ -13,9 +13,10 @@ ENV \
 # eg:
 USER test_user
 
-# execute command using RUN
+# execute bash command using RUN
 # eg:
-RUN 
+RUN cd /temp && \
+    ...
 
 # run the app.py
 CMD ["python3", "app/app.py"]
