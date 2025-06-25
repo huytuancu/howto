@@ -1,1 +1,4 @@
+# how to set variable
 
+eg:
+RUN export MY_VARIABLE = $"cat /secret/my_variable" 
