@@ -9,6 +9,10 @@ LABEL \
 
 ENV \
 
+# assign user
+# eg:
+USER test_user
+
 # execute command using RUN
 # eg:
 RUN 
