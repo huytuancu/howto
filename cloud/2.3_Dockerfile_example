@@ -1,14 +1,16 @@
 # this is an example of Dockerfile for python
 FROM
 
-RUN
-
-ARG
+# get environment variables using ARG
+ARG Product_Number
+ARG Product_Version
 
 LABEL \
 
 ENV \
 
+# execute command using RUN
+# eg:
 RUN 
 
 # run the app.py
