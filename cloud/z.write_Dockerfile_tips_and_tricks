@@ -1,4 +1,5 @@
 # how to set variable
 
 eg:
-RUN export MY_VARIABLE = $"cat /secret/my_variable" 
+RUN export VARIABLE_1 = $(cat /secret/variable_1) && \
+    export VARIABLE_2 = $(cat /secret/variable_2) && \
