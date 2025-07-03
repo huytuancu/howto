@@ -4,11 +4,16 @@
 # Need to update /home/$USER/.kube/config file eg: download from Rancher (a K8s cluster management tool)
 #
 
-Some basic and useful Kubernetes (K8S) commands
+# Some basic and useful Kubernetes (K8S) commands | Instead of using Rancher GUI
 
-# get ingress
+bash
+
+# get ingress/DNS
 kubectl get ingress -n <name_space>
+
 kubectl -n <name_space> get ingress -o json
+
+kubectl get deploy -n <name_space>
 
 # check current context
 kubectl config current-context
