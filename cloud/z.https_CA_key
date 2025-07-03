@@ -1,1 +1,6 @@
 # this reference file will discuss briefly about why, where, how to request a HTTPS CA license key on a cluster
+
+If you want to deploy your application as a web service that means you need to have a DNS (Domain Name Service) or in K8S they call Ingress
+
+and you want to deploy using HTTPS instead of HTTP you need to have Certificates (self signed certificate or request certificate from a CA Certificate Authority)
+
