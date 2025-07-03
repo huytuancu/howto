@@ -1,10 +1,12 @@
 # this is an example of Dockerfile for python
+# FROM defines based OS image where it is used to build together with codes in the repo
 FROM
 
 # get environment variables using ARG
 ARG Product_Number
 ARG Product_Version
 
+# LABEL is used to define image information eg: author, product number, product version and mostly inforamtive stuff
 LABEL \
 
 ENV \
