@@ -1,5 +1,5 @@
 # log in docker Registry
-docker login
+docker login "your docker Registry"
 
 # you need to have Docker Registry (a special server to store images) path where later on will store your docker images
 docker build -t <path_on_your_docker_registry>/<your-app-name> .
@@ -17,6 +17,9 @@ docker pull <path_on_your_docker_registry>/your-app-name>:<your_new_tag>
 
 # additional docker commands. Can search more information on internet
 docker run
+eg:
+docker run -it <docker image id>/<docker image name> .
+
 docker ps -a 
 docker exec
 docker logs <id>
