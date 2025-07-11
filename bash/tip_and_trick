@@ -38,3 +38,12 @@ set -x
 # sed is verify useful command in bash to search and replace. check internet for more info
 eg: search word ưith source then replace by destination
 sed s,/source/,/destination/,g 
+
+# check output error code
+# after executing a command
+errorCode=$?
+
+if [ $errorCode -ne 0 ]; then
+
+  echo "[ERROR]: failed with error $errorCode"
+fi
