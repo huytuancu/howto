@@ -3,6 +3,9 @@
 Terraform --> a framework to deploy CI/CD to AWS
 
 basic aws commands:
+  # aws runs on bash shell
+  bash
+
   # upload/download file
   aws s3 cp 
 
@@ -14,3 +17,9 @@ basic aws commands:
 
   # delete bucket
   aws s3 rb s3://my-bucket --force
+
+  # more
+  aws s3 ls
+  aws s3 ls s3://my-bucket/
+  aws s3 rm s3://my-bucket/file.txt
+  aws s3 rm s3://my-bucket/folder/ --recursive
