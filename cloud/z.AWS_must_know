@@ -1,3 +1,16 @@
 ÁWS: Amazon Web Service
 
 Terraform --> a framework to deploy CI/CD to AWS
+
+basic aws commands:
+  # upload/download file
+  aws s3 cp 
+
+  # sync folder
+  aws s3 sync ./local-folder s3://my0bucket/folder/
+
+  # create new bucket
+  aws s3 mb s3://my-new-bucket
+
+  # delete bucket
+  aws s3 rb s3://my-bucket --force
