@@ -5,7 +5,7 @@ https://argo-workflows.readthedocs.io/en/latest/walk-through/hello-world/
 - name: test-array
   value: ["item-0","item-2","item-3"]
 
-# how to loop a function using an array 
+# how to loop a function using an array defined above
 - name: your-template-name
   templateRef:
     name: <argocd_app-template_name-version>
@@ -14,6 +14,8 @@ https://argo-workflows.readthedocs.io/en/latest/walk-through/hello-world/
   arguments:
     parameters:
       - name: <input parameter 1>
+        value: "{{item}}" # item from test-array
+      - name: <input parameter 2>
         value: "..."
 
 # define workflow template | think of it as template functions
