@@ -19,5 +19,5 @@ https://argo-workflows.readthedocs.io/en/latest/walk-through/hello-world/
 # define workflow template | think of it as template functions
 kind: WorkflowTemplate
 
-# define mail workflow
+# define main workflow
 kind: Workflow
