@@ -4,3 +4,14 @@
 
 # how to loop a function using an array 
 - name: your-template-name
+  templateRef:
+    name: <argocd_app-template_name-version>
+    template: your_template
+  withParam: "{{workflow.parameters.test-array"
+  arguments:
+    parameters:
+      - name: <input parameter 1>
+        value: "..."
+
+# define workflow template
+kind: WorkflowTemplate
