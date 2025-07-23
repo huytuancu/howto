@@ -21,5 +21,9 @@ https://argo-workflows.readthedocs.io/en/latest/walk-through/hello-world/
 # define workflow template | think of it as template functions
 kind: WorkflowTemplate
 
+# argo workflow templates are written in helm > chart > templates and later on deployed on argo-cd server on a specific namespace
+# other users (aka applications) need to deploy on the same name space in order to use/call it
+
 # define main workflow
 kind: Workflow
+
