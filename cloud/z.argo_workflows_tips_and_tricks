@@ -1,6 +1,10 @@
 # official document
 https://argo-workflows.readthedocs.io/en/latest/walk-through/hello-world/
 
+# useful workflow name & unique id
+{{workflow.name}} 
+{{workflow.uid}}
+
 # how to define an array
 - name: test-array
   value: ["item-0","item-2","item-3"]
