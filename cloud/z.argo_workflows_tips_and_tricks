@@ -2,8 +2,8 @@
 https://argo-workflows.readthedocs.io/en/latest/walk-through/hello-world/
 
 # useful workflow name & unique id
-{{workflow.name}} 
-{{workflow.uid}}
+{{workflow.name}} --> string generated from the workflow
+{{workflow.uid}}  --> random unique string 
 
 # how to define an array
 - name: test-array
