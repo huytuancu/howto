@@ -1,1 +1,3 @@
-# To be update
+# To be updated
+
+Incase you don't install Argo-CD application on your cluster, you can purely use helm commands to deploy your application on K8S cluster
