@@ -1,6 +1,21 @@
 # official document
 https://argo-workflows.readthedocs.io/en/latest/walk-through/hello-world/
 
+# withItems --> passing array directly in a template/funcion
+eg:
+- name: Test-with-items
+  templateRef:
+    name: <workflow_template_name>
+    template: <template_function>
+  arguments:
+    parameters:
+      - name: parameter-1
+        value: "{{item.parameter-1}}"
+      - name: parameter-2
+        value: "{{item.parameter-2}}"
+  withItems:
+      - { parameter-1 : 'xyz', parameter-2 : 'abc'}
+
 # useful workflow name & unique id
 {{workflow.name}} --> string generated from the workflow
 {{workflow.uid}}  --> random unique string 
