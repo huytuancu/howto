@@ -23,3 +23,17 @@ basic aws commands:
   aws s3 ls s3://my-bucket/
   aws s3 rm s3://my-bucket/file.txt
   aws s3 rm s3://my-bucket/folder/ --recursive
+
+# AWS cloud
+aws_endpoint
+aws_region
+aws_access_key_id
+aws_secret_access_key
+aws_locations_bucket_name
+aws_locations_bucket_prefix
+
+
+
+
+
+
