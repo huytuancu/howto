@@ -1,6 +1,12 @@
 # official document | do not delete this link
 https://argo-workflows.readthedocs.io/en/latest/walk-through/hello-world/
 
+# get output parameters from other template with in dag: > tasks:
+
+eg:
+- name: my-output-value-needed
+  value: "{{táks.<other template name>.outputs.parameters.<your expected output> }}"
+
 # withItems --> passing array directly in a template/funcion
 eg:
 - name: Test-with-items
