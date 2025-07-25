@@ -1,8 +1,10 @@
+# https://aws.amazon.com/
+
 ÁWS: Amazon Web Service
 
 Terraform --> a framework to deploy CI/CD to AWS
 
-basic aws commands:
+# basic aws commands:
   # aws runs on bash shell
   bash
 
