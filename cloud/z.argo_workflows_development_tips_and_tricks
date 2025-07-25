@@ -5,7 +5,7 @@ https://argo-workflows.readthedocs.io/en/latest/walk-through/hello-world/
 
 eg:
 - name: my-output-value-needed
-  value: "{{táks.<other template name>.outputs.parameters.<your expected output> }}"
+  value: "{{tasks.<other template name>.outputs.parameters.<your expected output parameter> }}"
 
 # withItems --> passing array directly in a template/funcion
 eg:
