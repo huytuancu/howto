@@ -52,9 +52,9 @@ kind: WorkflowTemplate
 # define main workflow
 kind: Workflow
 
-# volumes and mountpath
-# volumes is used to define logical storage on a pod
-# mountpath is used to define absolute path associated with logical volumes above
+# volumes and mountpath | extremely important
+# volumes is used to define logical storage on a pod eg: to store codes, debug logs... etc
+# mountpath is used to define absolute path associated with logical volumes above on a specific template/function
 
 examples:
 
