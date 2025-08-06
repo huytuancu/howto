@@ -56,7 +56,7 @@ kind: Workflow
 # volumes is used to define logical storage on a pod eg: to store codes, debug logs... etc
 # volumeMounts is used to define absolute path associated with logical volumes above on a specific template/function
 
-examples: some types of volumes
+examples: some important types of volumes
 
 volumes:
   - name: out    # logical name
@@ -69,11 +69,11 @@ volumes:
 
   - name: my-secret
     secret: # --> secret type
-    secretName: my-secret-on-rancher # specific secret on specific namespace
+    secretName: secret-on-rancher # specific secret on specific namespace
     items:
-      - key: my_secret_user_on_rancher
+      - key: item_secret_user_on_rancher
         path: user
-      - key: my_secret_password_on_rancher
+      - key: item_secret_password_on_rancher
         patch: pass
 
 volumeMounts:
@@ -84,7 +84,7 @@ volumeMounts:
     mountPath: /workspace # --> this is the folder to store
 
   - name: my-secret
-    mountPath: /secret # store user/pass on /secret/user and secret/pass
+    mountPath: /secret # will store on /secret/user and /secret/pass on live pod
 
 
 
