@@ -53,8 +53,8 @@ kind: WorkflowTemplate
 kind: Workflow
 
 # volumes and volumeMounts | extremely important
-# volumes is used to define logical storage on a pod eg: to store codes, debug logs... etc
-# volumeMounts is used to define absolute path associated with logical volumes above on a specific template/function
+# volumes is used to define logical storage on a pod eg: to store codes, debug logs, tokens, user/password... etc
+# volumeMounts is used to define absolute path associated with logical volumes above on a specific template/function on live pod
 
 examples: some important types of volumes
 
