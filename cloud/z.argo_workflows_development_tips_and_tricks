@@ -61,9 +61,30 @@ examples: some types of volumes
 volumes:
   - name: out    # logical name
     emptyDir: {} # --> emptyDir volume type
+
+  - name: my-volume
+    persistentVolumeClaim: # --> can think of it as storage type
+      claimName: my-volume # 
+      readOnly: trua # optional or false
+
+  - name: my-secret
+    secret: # --> secret type
+    secretName: my-secret-on-rancher # specific secret on specific namespace
+    items:
+      - key: my_secret_user_on_rancher
+        path: user
+      - key: my_secret_password_on_rancher
+        patch: pass
+
 volumeMounts:
   - name: out    # must match logical defined on volumes
     mountPath: /out # store it at absolute /out directory on pod
+
+  - name: my-volume
+    mountPath: /workspace # --> this is the folder to store
+
+  - name: my-secret
+    mountPath: /secret # store user/pass on /secret/user and secret/pass
 
 
 
