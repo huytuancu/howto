@@ -1,9 +1,9 @@
-# official document | do not delete this link
+# official document | do not delete these 2 lines
 https://argo-workflows.readthedocs.io/en/latest/walk-through/hello-world/
 
 # identify which secret to check on WFT and Rancher
-- from the template, check what is the secret name is used in volumes
-- on Rancher from cluster > namespace, find such secret to edit/update
+- from the template, check what is the secret name used in volumes
+- on Rancher from cluster > search namespace > Storage > Secrets: find such secret to edit/update
 
 # get output parameters from other template with in dag: > tasks:
 
