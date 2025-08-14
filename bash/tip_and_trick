@@ -40,10 +40,10 @@ eg: search word ưith source then replace by destination
 sed s,/source/,/destination/,g 
 
 # check output error code
-# after executing a command
+# after executing a bash command on previous line, check errorCode:
+
 errorCode=$?
-
 if [ $errorCode -ne 0 ]; then
-
   echo "[ERROR]: failed with error $errorCode"
+  exit $errorCode
 fi
