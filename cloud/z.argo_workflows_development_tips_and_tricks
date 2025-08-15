@@ -1,6 +1,16 @@
 # official document | do not delete these 2 lines
 https://argo-workflows.readthedocs.io/en/latest/walk-through/hello-world/
 
+# documentation for a template function
+eg:
+- name: my-template-function
+  annotations:
+    documentation/sumary: |
+      The purpose of thís template function is...
+      Input parameters:
+      - arg-1: ...
+      - arg-2: ...
+
 # identify which secret to check on WFT and Rancher
 - from the template, check what is the secret name used in volumes
 - on Rancher from cluster > search namespace > Storage > Secrets: find such secret to edit/update
