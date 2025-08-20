@@ -1,3 +1,6 @@
+# simple example:
+# https://meghasharmaa704.medium.com/dockerfile-for-a-python-application-d88d6bf14a13
+
 # this is an example of Dockerfile for python
 # FROM defines based OS image where it is used to build together with codes in the repo
 FROM
@@ -7,8 +10,10 @@ ARG Product_Number
 ARG Product_Version
 
 # LABEL is used to define image information eg: author, product number, product version and mostly inforamtive stuff
+# LABEL doesn't impact much on coding logic later on
 LABEL \
 
+# ENV will set environment variable during run time
 ENV \
 
 # assign user
