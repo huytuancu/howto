@@ -2,6 +2,9 @@
 echo $0
 bash
 
+# PATCH variable in bash is the most important variable where points to applications to start etc and more...
+echo $PATH
+
 # edit bash profile:
 .bashrc.user
 
