@@ -1,5 +1,5 @@
 # how to add binary built to PATH
-ENV PATH "$PATH:/local/bin"
+ENV PATH "$PATH:/.local/bin"
 
 # how to set variable
 
