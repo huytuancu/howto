@@ -1,6 +1,10 @@
 # official document | do not delete these 2 lines
 https://argo-workflows.readthedocs.io/en/latest/walk-through/hello-world/
 
+# set variable in bash in workflow template from a rancher secret
+eg:
+TOKEN="`cat /secret/TOKEN`" # mountPath: /secret
+
 # documentation for a template function
 eg:
 - name: my-template-function
