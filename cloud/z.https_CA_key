@@ -1,4 +1,4 @@
-# this reference file will discuss briefly about why, where, how to request a HTTPS CA license key on a cluster
+# this reference file will discuss briefly about why, where, how to request a HTTPS CA license (aka TLS certificate on port 443) on a cluster
 
 If you want to deploy your application as a web service that means you need to have a DNS (Domain Name Service) or in K8S they call Ingress
 
