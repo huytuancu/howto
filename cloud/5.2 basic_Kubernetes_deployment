@@ -1,0 +1,14 @@
+# pure K8s deployment can be used .yaml files then 
+# use kubectl commands to apply into the cluster
+
+# pod.yaml example
+https://kubernetes.io/docs/concepts/workloads/pods/
+
+# Deployment.yaml example
+https://kubernetes.io/docs/concepts/workloads/controllers/deployment/
+
+# service and ingress example:
+https://kubernetes.io/docs/concepts/services-networking/service/
+https://kubernetes.io/docs/concepts/services-networking/ingress/
+
+# more?
