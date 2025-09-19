@@ -11,4 +11,6 @@ https://kubernetes.io/docs/concepts/workloads/controllers/deployment/
 https://kubernetes.io/docs/concepts/services-networking/service/
 https://kubernetes.io/docs/concepts/services-networking/ingress/
 
+kubectl describe ingress <ingress name>
+
 # more?
