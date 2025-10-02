@@ -1,3 +1,6 @@
+# tail command
+tail -n 10 <file_name> # read 10 lines from file_name
+
 # go to bash shell
 echo $0
 bash
