@@ -40,9 +40,9 @@ while [[ true ]]; do
 done
 
 # đisable / enable printout
-set +x # disable printout
+set +x # disable printout --> that means printout will be hidden
 ....
-set -x
+set -x # stop disable printout
 
 # sed is verify useful command in bash to search and replace. check internet for more info
 eg: search word ưith source then replace by destination
