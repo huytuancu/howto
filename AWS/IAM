@@ -2,6 +2,8 @@
 
 # IAM --> access management
 
+IAM root user can create other users and provision to specific groups
+
 # IAM Policies
 - it is a json file to define rules
 
