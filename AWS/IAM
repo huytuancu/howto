@@ -1,4 +1,9 @@
-# IAM
+# topics:
+
+# IAM --> access management
 
 # IAM Policies
 - it is a json file to define rules
+
+# IAM Policies Inheritance
+
