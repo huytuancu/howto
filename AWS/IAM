@@ -1,6 +1,6 @@
 # topics:
 
-# IAM --> access management
+# IAM --> identify access management
 
 IAM root user can create other users and provision to specific groups
 
