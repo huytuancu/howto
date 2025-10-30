@@ -1,6 +1,9 @@
 # this file is a mess but you can search quickly tips and tricks if you like
 # latest update is on top :D 
 
+# fetch latest commitID
+latest_commit_ID=$(git rev-parse HEAD)
+
 # tail command
 tail -n 10 <file_name> # read 10 lines from file_name
 
