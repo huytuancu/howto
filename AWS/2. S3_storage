@@ -13,3 +13,5 @@ objects reaching lifecycle endpoint can be automatically deleted
 - Requester Pays (data transfer pay for downloader) etc
 
 - Security
+
+- Advanced Tools (Datasync, storate lens, batch operations)
