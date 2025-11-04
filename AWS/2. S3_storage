@@ -1,1 +1,15 @@
 # S3 is used to store files
+
+keu topics:
+
+- storage time:
+
+30 days
+90 days
+objects reaching lifecycle endpoint can be automatically deleted
+
+- S3 event notifications
+
+- Requester Pays (data transfer pay for downloader) etc
+
+- Security
