@@ -1,6 +1,9 @@
 # official document | do not delete these 2 lines
 https://argo-workflows.readthedocs.io/en/latest/walk-through/hello-world/
 
+# sidecar
+https://argo-workflows.readthedocs.io/en/latest/walk-through/sidecars/
+
 # set variable in bash in workflow template from a rancher secret
 eg:
 TOKEN="`cat /secret/TOKEN`" # mountPath: /secret
