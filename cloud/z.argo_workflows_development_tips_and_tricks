@@ -3,6 +3,8 @@ https://argo-workflows.readthedocs.io/en/latest/walk-through/hello-world/
 
 # sidecar
 https://argo-workflows.readthedocs.io/en/latest/walk-through/sidecars/
+- on argo-ui > click on the template gui > at the right side --> click on CONTAINERS > go dơwn to SIDECARS
+  click on the sidecar name > LOGS
 
 # set variable in bash in workflow template from a rancher secret
 eg:
