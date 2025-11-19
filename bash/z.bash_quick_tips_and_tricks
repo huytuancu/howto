@@ -1,6 +1,10 @@
 # this file is a mess but you can search quickly tips and tricks if you like
 # latest update is on top :D 
 
+# CURL command is frequently used in bash developemnt to access a site automatically and more
+https://curl.se/docs/manpage.html
+
+
 # include another bash file
 source test.sh
 
