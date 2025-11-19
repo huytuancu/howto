@@ -1,3 +1,8 @@
+# NOTICES: latest update is on TOP. do not delete thís line
+
+# call a python3 tool
+python3 your_tool.py -h
+
 # define python3 & common frequenlty used libraries
 #!/usr/bin/env python3
 
