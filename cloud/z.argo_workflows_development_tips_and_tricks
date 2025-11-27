@@ -94,8 +94,8 @@ volumes:
     secret: # --> secret type
     secretName: secret-on-rancher # specific secret on specific namespace
     items:
-      - key: item_secret_user_on_rancher
-        path: user
+      - key: item_secret_user_on_rancher # specific item on above secret-on-rancher
+        path: user # file name stored on VolumeMounts moutPath
       - key: item_secret_password_on_rancher
         patch: pass
 
