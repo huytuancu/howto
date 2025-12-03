@@ -1,1 +1,7 @@
 # How to configure Amazon VPC to communicate into internet and more
+
+- Log in to your Amazon VPC using your root account
+
+Subjects to configure based on your needed scenarios
+
+IP range
