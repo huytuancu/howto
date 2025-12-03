@@ -4,4 +4,14 @@
 
 Subjects to configure based on your needed scenarios
 
-IP range
+IP range - CIDR
+VPC define a list of CIDR IPv4 & IPv6
+Subnets
+Internet Gateway
+Route Tables
+Bastion Host
+NAT Instances
+NAT Gateway
+NACL
+Security Groups
+
