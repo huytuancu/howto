@@ -1,6 +1,10 @@
 # this file is a mess but you can search quickly tips and tricks if you like
 # latest update is on top :D 
 
+# ignore failure and continue
+eg:
+rm file_does_not_exist || true
+
 # declare a global temp variable
 declare temp_var=""
 declare version="1.0.0"
