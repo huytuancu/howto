@@ -14,4 +14,16 @@ NAT Instances
 NAT Gateway
 NACL
 Security Groups
+VPC Peering
+VPC Endpoints
+VPC Flow Logs
+Site-to-Site VPN
+AWS VPN CloudHub
+Direct Connect
+Direct Connect Gateway
+AWS PrivateLink / VPC Enpoint Services
+ClassicLink
+Transit Gateway
+Traffic Miroring
+Egress-only Internet Gateway - similar a NAT Gateway, but for IPV6 
 
