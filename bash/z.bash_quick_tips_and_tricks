@@ -1,8 +1,15 @@
 # this file is a mess but you can search quickly tips and tricks if you like
 # latest update is on top :D 
 
+# declare a global temp variable
+declare temp_var=""
+declare version="1.0.0"
+
 # CURL command is frequently used in bash developemnt to access a site automatically and more
 https://curl.se/docs/manpage.html
+
+eg: test a connect to internet via calling google.com
+curl google.com
 
 
 # include another bash file
