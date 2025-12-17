@@ -22,7 +22,7 @@ NAMESPACE
 II. Source
 
 REPO URL
-TARGET REVISION (git sha)
+TARGET REVISION (git sha) --> important here
 PATH: eg chart
 
 III. Destination
