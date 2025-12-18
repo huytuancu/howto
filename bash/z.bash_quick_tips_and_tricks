@@ -1,6 +1,14 @@
 # this file is a mess but you can search quickly tips and tricks if you like
 # latest update is on top :D 
 
+# stop if error happens
+set +e # turn on setting
+
+# --> trying to do somethings here eg:
+curl google.com
+
+set -e # turn off setting
+
 # ignore failure and continue
 eg:
 rm file_does_not_exist || true
