@@ -1,6 +1,10 @@
 # official document | do not delete these 2 lines
 https://argo-workflows.readthedocs.io/en/latest/walk-through/hello-world/
 
+# LIVE MANIFEST --> update live code on argo-cd application
+- Turn off auto sync
+- on LIVE MANIFEST --> Edit --> update your fix --> Save
+
 # sidecar
 https://argo-workflows.readthedocs.io/en/latest/walk-through/sidecars/
 - on argo-ui > click on the template gui > at the right side --> click on CONTAINERS > go dơwn to SIDECARS
