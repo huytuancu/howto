@@ -1,6 +1,9 @@
 # this file is a mess but you can search quickly tips and tricks if you like
 # latest update is on top :D 
 
+# set HOME folder to current directory
+HOME="$(pwd)"
+
 # stop if error happens
 set +e # turn on setting
 
