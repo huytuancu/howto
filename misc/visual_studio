@@ -1,10 +1,10 @@
-# nowadays, Visual Studio is a famous tool for software development projects
-# Visual Studio ìs free to íntall on Windows
+# nowadays, Visual Studio is a common/famous tool for software development projects
+# Visual Studio ìs free
 
 # start visual studio on Linux based
-  # check latest version please
-  module add vscode/1.71.0
-  code .
+bash  
+module add vscode/1.71.0 # check latest version please  
+code .
 
 # comment out a block of code
 Ctrl + K + C
