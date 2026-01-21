@@ -8,6 +8,6 @@ export USER_TOKEM=<token>
 ...
 # start your local app
 eg: 
-http://local:<port>
+http://localhost:<port>
 
 
