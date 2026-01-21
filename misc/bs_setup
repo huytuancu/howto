@@ -4,9 +4,9 @@ eg:
 export USER=dummy
 export USER_TOKEM=<token>
 ...
-# yarn commands
+# yarn commands --> install libs and dependencies
 ...
-# start your local app
+# start your local app on browser eg: firefox
 eg: 
 http://localhost:<port>
 
