@@ -5,5 +5,9 @@ export USER=dummy
 export USER_TOKEM=<token>
 ...
 # yarn commands
+...
+# start your local app
+eg: 
+http://local:<port>
 
 
