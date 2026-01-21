@@ -1,1 +1,8 @@
-# 
+#
+# export all needed environment variables
+eg:
+export USER=dummy
+export USER_TOKEM=<token>
+...
+
+
