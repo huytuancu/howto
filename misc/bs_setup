@@ -1,11 +1,13 @@
 #
-# export all needed environment variables - locally on your dev env
+# on dev CLI console: export all needed environment variables
 eg:
 export USER=dummy
 export USER_TOKEM=<token>
 ...
+
 # yarn commands --> install libs and dependencies
 ...
+
 # start your local app on browser eg: firefox
 eg: 
 http://localhost:<port>
