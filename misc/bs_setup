@@ -1,5 +1,5 @@
 #
-# export all needed environment variables
+# export all needed environment variables - locally on your dev env
 eg:
 export USER=dummy
 export USER_TOKEM=<token>
