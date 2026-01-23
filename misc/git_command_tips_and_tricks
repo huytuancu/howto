@@ -7,3 +7,5 @@ git commit --allow-empty -m "Commit message"
 
 git pull --rebase
 git push origin HEAD:refs/for/master
+
+.git/config # thís file stores important information of repo eg: url
