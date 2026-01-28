@@ -15,7 +15,9 @@ git config user.email < >
 
 git config branch.master.url < >
 git config branch.master.pushurl < >
-...
+
+git config remote.origin.url https://<your domain>.com/<...>/
+git config remote.origin.pushurl < >
 
 # check .git configuration
 .git/config # thís file stores important information of repo eg: url
