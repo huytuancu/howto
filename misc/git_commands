@@ -1,12 +1,13 @@
 # reset to master branch
 git reset --hard origin/master
 
-# push empty commit
+git add . # add all files updated
 
-git commit --allow-empty -m "Commit message"
+# push empty commit
+git commit --allow-empty -m "Commit message" # delete --allow-empty if adding files
 
 git pull --rebase
-git push origin HEAD:refs/for/master
+git push origin HEAD:refs/for/master # push to HEAD aka latest on master branch
 
 # useful git config
 git config user.name < >
@@ -16,4 +17,5 @@ git config branch.master.url < >
 git config branch.master.pushurl < >
 ...
 
+# check .git configuration
 .git/config # thís file stores important information of repo eg: url
