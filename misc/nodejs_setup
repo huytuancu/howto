@@ -1,4 +1,16 @@
-#
+# npm commands
+# Node Package Management - command to supoort set up. check google or chatgpt for more information
+
+module avail nodejs
+
+# upđate on ~/.bashrc.user
+eg:
+module add nodejs/22.0.0
+
+source ~/.bashrc
+
+node -v
+
 # on dev CLI console: export all needed environment variables
 eg:
 export USER=dummy
