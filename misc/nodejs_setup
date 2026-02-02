@@ -17,8 +17,11 @@ export USER=dummy
 export USER_TOKEM=<token>
 ...
 
-# yarn commands --> install libs and dependencies
+# yarn commands --> similar npm command but faster to: install libs and dependencies etc. 
+# check google or chatgpt for more information
+yarn install
 ...
+yarn start # start your nodejs application
 
 # start your local app on browser eg: firefox
 eg: 
