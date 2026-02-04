@@ -16,7 +16,9 @@ module add nodejs/22.0.0
 
 source ~/.bashrc
 
+# check version of nodejs and npm tool
 node -v
+npm -v 
 
 # on dev CLI console: export all needed environment variables
 eg:
