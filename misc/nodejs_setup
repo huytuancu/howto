@@ -6,6 +6,8 @@ https://www.w3schools.com/nodejs/
 # Node Package Management - command to supoort set up. check google or chatgpt for more information
 # It helps you install and manage third-party packages (libraries) to add more features to your apps.
 
+# install npm on your linux:
+
 module avail nodejs
 
 # upđate on ~/.bashrc.user
