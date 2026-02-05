@@ -1,1 +1,36 @@
+# npm commands
 
+# Node Package Management - command to supoort set up. check google or chatgpt for more information
+# It helps you install and manage third-party packages (libraries) to add more features to your apps.
+eg:
+npm install -g <wanted package>
+
+# install npm on your linux:
+
+module avail nodejs
+
+# upđate on ~/.bashrc.user
+eg:
+module add nodejs/22.0.0
+
+source ~/.bashrc
+
+# check version of nodejs and npm tool
+node -v
+npm -v 
+
+# on dev CLI console: export all needed environment variables
+eg:
+export USER=dummy
+export USER_TOKEM=<token>
+...
+
+# yarn commands --> similar npm command but faster to: install libs and dependencies etc. 
+# check google or chatgpt for more information
+yarn install
+...
+yarn start # start your nodejs application
+
+# start your local app on browser eg: firefox
+eg: 
+http://localhost:<port>
