@@ -1,10 +1,18 @@
 # https://www.w3schools.com/nodejs/default.asp
 # progress: https://www.w3schools.com/nodejs/nodejs_architecture.asp
 
+## Basic
+
+## Asynchronous chapter
+$ Promises
+# Use async/await for better readability
+# Errors Handling
+# Always handle errors with try/catch
+
+###################################################################
+# tips and tricks
+###################################################################
 
 # require --> include node js lib
 eg:
 const fs = require('fs'); # lib file read
-
-# Use async/await for better readability
-# Always handle errors with try/catch
