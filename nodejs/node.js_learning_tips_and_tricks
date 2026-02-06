@@ -13,9 +13,16 @@ $ Promises
 ## Modules basic
 
 ###################################################################
-# tips and tricks
+# quick tips and tricks
 ###################################################################
 
 # require --> include node js lib
 eg:
 const fs = require('fs'); # lib file read
+
+// Importing custom modules
+const { getCurrentDate, formatCurrency } = require('./utils');
+const Logger = require('./logger');
+
+// Create a logger instance
+const logger = new Logger('App');
