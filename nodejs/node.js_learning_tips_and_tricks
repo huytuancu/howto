@@ -6,4 +6,5 @@
 eg:
 const fs = require('fs'); # lib file read
 
-# try... catch... --> similar other programing langueges
+# Use async/await for better readability
+# Always handle errors with try/catch
