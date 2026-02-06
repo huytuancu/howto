@@ -5,3 +5,5 @@
 # require --> include node js lib
 eg:
 const fs = require('fs'); # lib file read
+
+# try... catch... --> similar other programing langueges
