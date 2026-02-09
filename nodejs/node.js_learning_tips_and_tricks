@@ -11,6 +11,8 @@ $ Promises
 # Always handle errors with try/catch
 
 ## Modules basic
+package.json is a special file that describes your Node.js project.
+
 
 ###################################################################
 # quick tips and tricks
