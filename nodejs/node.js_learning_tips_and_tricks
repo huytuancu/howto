@@ -18,6 +18,11 @@ package.json is a special file that describes your Node.js project.
 # quick tips and tricks
 ###################################################################
 
+The key components of Node.js dependency management include:
+
+The package.json file for declaring dependencies
+Lock files (package-lock.json or yarn.lock) for dependency versioning
+
 # require --> include node js lib
 eg:
 const fs = require('fs'); # lib file read
