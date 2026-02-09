@@ -4,6 +4,9 @@
 # It helps you install and manage third-party packages (libraries) to add more features to your apps.
 eg:
 npm install -g <wanted package>
+# Install exact version
+npm install package-name@1.2.3
+
 
 # install npm on your linux:
 
