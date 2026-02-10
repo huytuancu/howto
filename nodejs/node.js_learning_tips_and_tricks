@@ -63,6 +63,15 @@ const sslOptions = {
   honorCipherOrder: true
 };
 
+// Start the server
+const PORT = process.env.PORT || 8443;
+server.listen(PORT, '0.0.0.0', () => {
+  console.log(`HTTP/2 server running at https://localhost:${PORT}`);
+  console.log('Environment:', process.env.NODE_ENV || 'development');
+  console.log('Press Ctrl+C to stop the server');
+});
+
+
 For production, it's common to run Node.js on a high port (like 3000, 8080) and use a reverse proxy like Nginx or Apache to handle SSL termination.
 
 Wildcard Certificates: Secures all subdomains of a domain
