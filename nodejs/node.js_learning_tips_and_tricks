@@ -27,6 +27,8 @@ https | The HTTPS module is a core Node.js module that provides an implementatio
 ###################################################################
 # quick tips and tricks
 ###################################################################
+Wildcard Certificates: Secures all subdomains of a domain
+
 # version matching on nodejs using sem ver
 eg:
 
