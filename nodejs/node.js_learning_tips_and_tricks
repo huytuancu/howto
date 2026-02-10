@@ -30,6 +30,13 @@ https://www.w3schools.com/nodejs/nodejs_https.asp
 # quick tips and tricks
 ###################################################################
 
+## testing https server: 
+
+# Check if server supports HTTP/2
+curl -I --http2 https://localhost:8443
+
+# Force HTTP/2 with verbose output
+curl -v --http2 https://localhost:8443
 #.env file
 
 NODE_ENV=development PORT=3000
