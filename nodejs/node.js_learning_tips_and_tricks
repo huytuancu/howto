@@ -16,8 +16,7 @@ package.json is a special file that describes your Node.js project.
 ## Core modules
 http
 url
-https
-
+https | The HTTPS module is a core Node.js module that provides an implementation of the HTTPS protocol, which is essentially HTTP over TLS/SSL.
 
 ###################################################################
 # quick tips and tricks
