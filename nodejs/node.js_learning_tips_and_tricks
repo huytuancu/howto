@@ -14,7 +14,9 @@ $ Promises
 package.json is a special file that describes your Node.js project.
 
 ## Core modules
-HTTP
+http
+url
+https
 
 
 ###################################################################
