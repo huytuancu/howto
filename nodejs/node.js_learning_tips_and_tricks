@@ -29,6 +29,9 @@ https://www.w3schools.com/nodejs/nodejs_https.asp
 ###################################################################
 # quick tips and tricks
 ###################################################################
+
+For production, it's common to run Node.js on a high port (like 3000, 8080) and use a reverse proxy like Nginx or Apache to handle SSL termination.
+
 Wildcard Certificates: Secures all subdomains of a domain
 
 # version matching on nodejs using sem ver
