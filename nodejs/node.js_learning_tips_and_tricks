@@ -30,6 +30,39 @@ https://www.w3schools.com/nodejs/nodejs_https.asp
 # quick tips and tricks
 ###################################################################
 
+#.env file
+
+NODE_ENV=development PORT=3000
+HOST=0.0.0.0
+SSL_KEY_PATH=./key.pem
+SSL_CERT_PATH=./cert.pem
+
+// SSL/TLS options
+const sslOptions = {
+  key: fs.readFileSync(path.join(__dirname, 'key.pem')),
+  cert: fs.readFileSync(path.join(__dirname, 'cert.pem')),
+  // Enable HTTP/2 if available
+  allowHTTP1: true,
+  // Recommended security options
+  minVersion: 'TLSv1.2',
+  ciphers: [
+    'TLS_AES_256_GCM_SHA384',
+    'TLS_CHACHA20_POLY1305_SHA256',
+    'TLS_AES_128_GCM_SHA256',
+    'ECDHE-RSA-AES128-GCM-SHA256',
+    '!DSS',
+    '!aNULL',
+    '!eNULL',
+    '!EXPORT',
+    '!DES',
+    '!RC4',
+    '!3DES',
+    '!MD5',
+    '!PSK'
+  ].join(':'),
+  honorCipherOrder: true
+};
+
 For production, it's common to run Node.js on a high port (like 3000, 8080) and use a reverse proxy like Nginx or Apache to handle SSL termination.
 
 Wildcard Certificates: Secures all subdomains of a domain
