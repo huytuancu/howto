@@ -18,6 +18,12 @@ http
 url
 https | The HTTPS module is a core Node.js module that provides an implementation of the HTTPS protocol, which is essentially HTTP over TLS/SSL.
 
+  Client initiates a secure connection to the server
+  Server presents its SSL/TLS certificate to the client
+  Client verifies the certificate with a trusted Certificate Authority (CA)
+  Encrypted session is established using asymmetric encryption
+  Symmetric encryption is used for the actual data transfer
+
 ###################################################################
 # quick tips and tricks
 ###################################################################
