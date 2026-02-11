@@ -24,3 +24,10 @@ Types of Certificates
   Extended Validation (EV): Highest level of validation, shows company name in browser
   Wildcard Certificates: Secures all subdomains of a domain | for production
   Multi-Domain (SAN) Certificates: Secures multiple domains with one certificate | for production
+
+// For development, you can create self-signed certificates using OpenSSL:
+# Generate a private key (RSA 2048-bit)
+openssl genrsa -out key.pem 2048
+
+# Generate a self-signed certificate (valid for 365 days)
+openssl req -new -x509 -key key.pem -out cert.pem -days 365 -nodes
