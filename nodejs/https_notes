@@ -8,3 +8,9 @@ How HTTPS Works
   Symmetric encryption is used for the actual data transfer
 
 Note: Modern HTTPS uses TLS (Transport Layer Security), which is the successor to SSL (Secure Sockets Layer). The terms are often used interchangeably, but SSL is now considered deprecated.
+
+// Using require()
+const https = require('https');
+
+// Using import (requires "type": "module" in package.json) | Node.js version 14+
+import https from 'https';
