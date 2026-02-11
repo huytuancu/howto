@@ -14,3 +14,5 @@ const https = require('https');
 
 // Using import (requires "type": "module" in package.json) | Node.js version 14+
 import https from 'https';
+
+Note: The main difference in usage is that HTTPS requires SSL/TLS certificates, while HTTP does not.
