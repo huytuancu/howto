@@ -6,3 +6,5 @@ How HTTPS Works
   Client verifies the certificate with a trusted Certificate Authority (CA)
   Encrypted session is established using asymmetric encryption
   Symmetric encryption is used for the actual data transfer
+
+Note: Modern HTTPS uses TLS (Transport Layer Security), which is the successor to SSL (Secure Sockets Layer). The terms are often used interchangeably, but SSL is now considered deprecated.
