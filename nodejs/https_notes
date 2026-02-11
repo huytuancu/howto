@@ -1,1 +1,8 @@
 # colloect important notes for setting basic node.js https server
+
+How HTTPS Works
+  Client initiates a secure connection to the server
+  Server presents its SSL/TLS certificate to the client
+  Client verifies the certificate with a trusted Certificate Authority (CA)
+  Encrypted session is established using asymmetric encryption
+  Symmetric encryption is used for the actual data transfer
