@@ -67,3 +67,12 @@ NODE_ENV=development PORT=3000
 HOST=0.0.0.0
 SSL_KEY_PATH=./key.pem
 SSL_CERT_PATH=./cert.pem
+
+# Check if server supports HTTP/2
+curl -I --http2 https://localhost:8443
+
+# Force HTTP/2 with verbose output
+curl -v --http2 https://localhost:8443
+
+# Test with HTTP/2 prior knowledge (no upgrade)
+curl --http2-prior-knowledge -I https://localhost:8443
