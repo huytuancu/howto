@@ -76,3 +76,11 @@ curl -v --http2 https://localhost:8443
 
 # Test with HTTP/2 prior knowledge (no upgrade)
 curl --http2-prior-knowledge -I https://localhost:8443
+
+
+Những điểm chính cần ghi nhớ
+HTTPS là điều thiết yếu : Phát triển web hiện đại đòi hỏi HTTPS để đảm bảo an toàn dữ liệu, bảo vệ quyền riêng tư người dùng và tuân thủ các tiêu chuẩn web.
+Quản lý chứng chỉ : Quản lý đúng cách các chứng chỉ SSL/TLS, cho dù sử dụng chứng chỉ tự ký cho môi trường phát triển hay chứng chỉ đáng tin cậy từ các tổ chức cấp chứng chỉ (CA) cho môi trường sản xuất.
+Bảo mật là trên hết : Luôn luôn áp dụng các biện pháp bảo mật tốt nhất, bao gồm cấu hình TLS đúng cách, tiêu đề bảo mật và xác thực dữ liệu đầu vào.
+Hiệu năng là yếu tố quan trọng : Tận dụng HTTP/2 để cải thiện hiệu năng thông qua các tính năng như ghép kênh, nén tiêu đề và đẩy dữ liệu từ máy chủ.
+Chuẩn bị cho môi trường sản xuất : Sử dụng máy chủ proxy ngược (như Nginx) trong môi trường sản xuất để đảm bảo an ninh, hiệu năng và độ tin cậy tốt hơn.
