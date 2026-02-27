@@ -1,1 +1,5 @@
 # .devcontainer is a method to deploy instead of deploying locally for testing purpose
+
+.devcontainer/Dockerfile
+.devcontainer/<application>/package.json
+.devcontainer/devcontainer.json
