@@ -1,1 +1,4 @@
-# thís json file contains node versions as well as dependencies and their versions
+{
+  "description": "thís json file contains node versions as well as dependencies and their versions",
+
+}
