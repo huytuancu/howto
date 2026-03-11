@@ -40,3 +40,14 @@ Done! kubectl is now configured to use "minikube" cluster and "default" namespac
 $ kubectl create namespace backstage
 namespace/backstage created
 
+# Alternatively, create and apply a Namespace definition:
+
+# kubernetes/namespace.yaml
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: backstage
+
+$ kubectl apply -f kubernetes/namespace.yaml
+namespace/backstage created
+
