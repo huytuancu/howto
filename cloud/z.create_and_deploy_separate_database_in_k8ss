@@ -1,0 +1,168 @@
+# ref: https://backstage.io/docs/deployment/k8s
+
+Creating the PostgreSQL database
+Backstage in production uses PostgreSQL as a database. To isolate the database from Backstage app deployments, we can create a separate Kubernetes deployment for PostgreSQL.
+
+Creating a PostgreSQL secret
+First, create a Kubernetes Secret for the PostgreSQL username and password. This will be used by both the PostgreSQL database and Backstage deployments:
+
+# kubernetes/postgres-secrets.yaml
+apiVersion: v1
+kind: Secret
+metadata:
+  name: postgres-secrets
+  namespace: backstage
+type: Opaque
+data:
+  POSTGRES_USER: YmFja3N0YWdl
+  POSTGRES_PASSWORD: aHVudGVyMg==
+
+The data in Kubernetes secrets are base64-encoded. The values can be generated on the command line:
+
+$ echo -n "backstage" | base64
+YmFja3N0YWdl
+
+Note
+Secrets are base64-encoded, but not encrypted. Be sure to enable Encryption at Rest for the cluster. For storing secrets in Git, consider SealedSecrets or other solutions
+
+The secrets can now be applied to the Kubernetes cluster:
+
+$ kubectl apply -f kubernetes/postgres-secrets.yaml
+secret/postgres-secrets created
+
+Creating a PostgreSQL persistent volume
+PostgreSQL needs a persistent volume to store data; we'll create one along with a PersistentVolumeClaim. In this case, we're claiming the whole volume - but claims can ask for only part of a volume as well.
+
+# kubernetes/postgres-storage.yaml
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: postgres-storage
+  namespace: backstage
+  labels:
+    type: local
+spec:
+  storageClassName: manual
+  capacity:
+    storage: 2G
+  accessModes:
+    - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Retain
+  hostPath:
+    path: '/mnt/data'
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: postgres-storage-claim
+  namespace: backstage
+spec:
+  storageClassName: manual
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 2G
+
+This file contains definitions for two different kinds, separated by a line with a triple dash. This syntax is helpful if you want to consolidate related Kubernetes definitions in a single file and apply them at the same time.
+
+Note the volume type: local; this creates a volume using local disk on Kubernetes nodes. More likely in a production scenario, you'd want to use a more highly available types of PersistentVolume.
+
+Apply the storage volume and claim to the Kubernetes cluster:
+
+$ kubectl apply -f kubernetes/postgres-storage.yaml
+persistentvolume/postgres-storage created
+persistentvolumeclaim/postgres-storage-claim created
+
+Creating a PostgreSQL deployment
+Now we can create a Kubernetes Deployment descriptor for the PostgreSQL database deployment itself:
+
+# kubernetes/postgres.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: postgres
+  namespace: backstage
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: postgres
+  template:
+    metadata:
+      labels:
+        app: postgres
+    spec:
+      containers:
+        - name: postgres
+          image: postgres:13.2-alpine
+          imagePullPolicy: 'IfNotPresent'
+          ports:
+            - containerPort: 5432
+          envFrom:
+            - secretRef:
+                name: postgres-secrets
+          env:
+            - name: POSTGRES_HOST
+              value: postgres.backstage
+            - name: POSTGRES_PORT
+              value: '5432'
+          volumeMounts:
+            - mountPath: /var/lib/postgresql/data
+              name: postgresdb
+              subPath: data
+      volumes:
+        - name: postgresdb
+          persistentVolumeClaim:
+            claimName: postgres-storage-claim
+
+If you're not used to Kubernetes, this is a lot to take in. We're describing a Deployment (one or more instances of an application) that we'd like Kubernetes to know about in the metadata block.
+
+The spec block describes the desired state. Here we've requested Kubernetes create 1 replica (running instance of PostgreSQL), and to create the replica with the given pod template, which again contains Kubernetes metadata and a desired state. The template spec shows one container, created from the published postgres:13.2-alpine Docker image.
+
+Note the envFrom and secretRef - this tells Kubernetes to fill environment variables in the container with values from the Secret we created. We've also referenced the volume created for the deployment, and given it the mount path expected by PostgreSQL.
+
+Apply the PostgreSQL deployment to the Kubernetes cluster:
+
+$ kubectl apply -f kubernetes/postgres.yaml
+deployment.apps/postgres created
+
+$ kubectl get pods --namespace=backstage
+NAME                        READY   STATUS    RESTARTS   AGE
+postgres-56c86b8bbc-66pt2   1/1     Running   0          21s
+
+Verify the deployment by connecting to the pod:
+
+$ kubectl exec -it --namespace=backstage postgres-56c86b8bbc-66pt2 -- /bin/bash
+bash-5.1# psql -U $POSTGRES_USER
+psql (13.2)
+backstage=# \q
+bash-5.1# exit
+
+Creating a PostgreSQL service
+The database pod is running, but how does another pod connect to it?
+
+Kubernetes pods are transient - they can be stopped, restarted, or created dynamically. Therefore we don't want to try to connect to pods directly, but rather create a Kubernetes Service. Services keep track of pods and direct traffic to the right place.
+
+The final step for our database is to create the service descriptor:
+
+# kubernetes/postgres-service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: postgres
+  namespace: backstage
+spec:
+  selector:
+    app: postgres
+  ports:
+    - port: 5432
+
+Apply the service to the Kubernetes cluster:
+
+$ kubectl apply -f kubernetes/postgres-service.yaml
+service/postgres created
+
+$ kubectl get services --namespace=backstage
+NAME       TYPE        CLUSTER-IP    EXTERNAL-IP   PORT(S)    AGE
+postgres   ClusterIP   10.96.5.103   <none>        5432/TCP   29s
