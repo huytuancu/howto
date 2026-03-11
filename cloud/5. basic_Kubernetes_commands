@@ -35,3 +35,8 @@ $ minikube start
 
 ...
 Done! kubectl is now configured to use "minikube" cluster and "default" namespace by default.
+
+# Creating a namespace
+$ kubectl create namespace backstage
+namespace/backstage created
+
