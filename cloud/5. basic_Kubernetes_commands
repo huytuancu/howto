@@ -25,3 +25,13 @@ kubectl get po -n <name_space>
 
 # get logs
 kubectl logs -n <name_space> <full_pod_name>
+
+# minikube cluster
+# ref https://backstage.io/docs/deployment/k8s
+
+# Assumes Mac + Homebrew; see the minikube site for other installations
+$ brew install minikube
+$ minikube start
+
+...
+Done! kubectl is now configured to use "minikube" cluster and "default" namespace by default.
