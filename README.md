@@ -1,4 +1,4 @@
-# Thís repo is to note "how to" on specific area
+# This repo is to note "how to" on specific area
 ## Quote: KNOWLEDGE if not used or shared is USELESS! OK
 
 [TOC]
