@@ -3,3 +3,4 @@
 .devcontainer/Dockerfile
 .devcontainer/<application>/package.json
 .devcontainer/devcontainer.json
+.devcontainer/.env # define environment variables
