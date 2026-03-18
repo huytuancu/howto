@@ -5,7 +5,8 @@
 
 ## Overview
 
-This repo helps to quickly remember "how to" for myself and/or any developers interested relating to public development information using FREE open source resources on internet as well as public cloud.
+This repo helps to quickly remember "how to" for myself and/or any developers interested during my free/pleasure time 
+relating to public development information using FREE open source resources on internet as well as public cloud.
 This repo is indeed NOT a specific product/project development
 
  This repo is suitable from newbie level and some areas are also suitable for expert/ study or researcher persons
