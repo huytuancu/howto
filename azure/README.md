@@ -1,1 +1,1 @@
-# azure cloud, basic information to know - on-going
+# Microsoft azure cloud, similar to AWS from Amazon
