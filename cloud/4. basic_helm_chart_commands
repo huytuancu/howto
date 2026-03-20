@@ -21,11 +21,13 @@ helm template .
 
 # additional useful commands
 helm list -n <name space>
-helm uninstall <app/db> -n <name space>
+helm uninstall <app/db name> -n <name space>
 
 # install db
-helm install <namespace> -<db type> <file>.tar \
+helm install <app/db name> -<db type> <file>.tar \
   --set global.xyz \
   ...
   -n <name space>
+
+helm rollback ...
 
