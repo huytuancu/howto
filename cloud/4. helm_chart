@@ -19,3 +19,7 @@ helm template .
 
 # Then modify files to include docker image, ingress (DMS), etc then test it out by trying to deploy
 
+# additional useful commands
+helm list -n <name space>
+helm uninstall <app/db> -n <name space>
+
