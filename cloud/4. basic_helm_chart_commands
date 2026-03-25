@@ -27,7 +27,9 @@ helm uninstall <app/db name> -n <name space>
 helm install <app/db name> -<db type> <file>.tar \
   --set global.xyz \
   ...
-  -n <name space>
+  -n <name space> # must include a name space
 
 helm rollback ...
+
+helm install --atomic ... # deploy must run susceessfully otherwise eg: error then automatically rollback (fully clean as not yet deployed)
 
