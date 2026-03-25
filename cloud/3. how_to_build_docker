@@ -1,3 +1,5 @@
+# make sure you have docker installed on your development machine. minimum RAM 16 G
+
 # log in docker Registry
 docker login "your docker Registry"
 
