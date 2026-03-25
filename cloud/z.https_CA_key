@@ -4,3 +4,7 @@ If you want to deploy your application as a web service that means you need to h
 
 and you want to deploy using HTTPS instead of HTTP you need to have Certificates (self signed certificate or request certificate from a CA Certificate Authority)
 
+There are alternatives where you can request free certificate from some CA servers.
+
+You need to have a private key and certificate then based on your frontent programing language you need to configure using private key and the certificate and couble of more relating to TLS thingy
+
