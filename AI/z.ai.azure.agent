@@ -1,9 +1,9 @@
 # how to create agents in Microsoft Azure AI
 
-Agents: will create AI agent
+Agents: will create AI agents
 
-Instructions: this one will provide the agent reactions to user prompt
+  Instructions: this one will provide the agent reactions to user prompt
 
-Workflows:
+Workflows: will create workflow aka business logic where agent communicates each others
 
-Preview:
+Preview: test it out
