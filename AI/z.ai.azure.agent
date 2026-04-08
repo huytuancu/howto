@@ -1,8 +1,9 @@
-# how to create agents in Microsoft Azure AI
+# how to create agents in Microsoft Azure AI cloud
+# pre-requisites: user must have Azure account and then login AI azure
 
 Agents: will create AI agents
 
-  Instructions: this one will provide the agent reactions to user prompt
+  Instructions: this one will provide guidline to the agent reactions to user prompt
 
 Workflows: will create workflow aka business logic where agent communicates each others
 
