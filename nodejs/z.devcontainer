@@ -3,4 +3,12 @@
 .devcontainer/Dockerfile
 .devcontainer/<application>/package.json
 .devcontainer/devcontainer.json
-.devcontainer/.env # define environment variables
+
+.devcontainer/.env # define environment variables for .devcontainer as local development
+eg:
+USER=< >
+PASS=< >
+EMAIL=<>
+URL=http://0.0.0.0:<port number>
+BACK_END_URL=http://localhost:<port number>
+#... etc
