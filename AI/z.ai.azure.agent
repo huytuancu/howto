@@ -9,5 +9,7 @@ Workflows: will create workflow aka business logic where agent communicates each
 
   Build
   Traces: generate logs
+  Monitor
+  Evaluation
 
 Preview: test it out
