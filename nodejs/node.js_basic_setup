@@ -30,7 +30,10 @@ export USER_TOKEM=<token>
 ...
 
 # yarn commands --> similar npm command but faster to: install libs and dependencies etc. 
-yarn install # install needed libs
+yarn install... # install needed libs
+yarn add ... # add plugin
+eg:
+yarn add --cưd package/app backstage-plugin-prometheus # add plugin prometheus 
 ...
 yarn start # start your nodejs application
 
