@@ -1,4 +1,4 @@
-# S3 is used to store files
+# S3 is used to store files as AWS storage solution from user 's choice
 
 key topics:
 
@@ -15,3 +15,11 @@ objects reaching lifecycle endpoint can be automatically deleted
 - Security
 
 - Advanced Tools (Datasync, storate lens, batch operations)
+
+- a storage instance (important to know)
+eg:
+
+development_instance # shall be test/staging/production
+  ENDPOINT: "https://..."
+  BUCKET_NAME: "your-bucket-name" # can understand as folder name
+  AWS_REGION: "your_aws_region" # eg: eu-est-001 
