@@ -1,4 +1,6 @@
 # how to create agents in Microsoft Azure AI cloud
+https://learn.microsoft.com/en-us/azure/foundry/agents/concepts/development-lifecycle
+
 # pre-requisites: user must have Azure account and then login AI azure
 
 Agents: will create AI agents
