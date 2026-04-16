@@ -1,0 +1,5 @@
+# in order to access azure cloud, user needs to have:
+
+azure_client_id=<>
+azure_client_secret=<>
+azure_tenant_id=<>
