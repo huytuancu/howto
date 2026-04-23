@@ -1,5 +1,9 @@
+# typescript is maintained and updated by Microsoft
 # typescript is used to write then it will convert to javascript automatically
-# typescript is needed for node.js dev 
+# typescript is needed for node.js dev projects
+
+# tutorial once you want to re-check on specific topic
+https://www.w3schools.com/typescript/
 
 # key notes
 it is not easy to remember rules in writing typescript, just understand the idea of logic then search AI for faster 
