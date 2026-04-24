@@ -41,6 +41,10 @@ expect(logs).toContain(' ready ')
 eg:
 throw new InputError('user passing wrong variable');
 
+# typescript with nodejs
+https://www.w3schools.com/typescript/typescript_nodejs.php
+
+
 # important libs from node.js
 import * as os from 'node.os' # operating libs
 import * as fs from 'node.fs' # file system libs
