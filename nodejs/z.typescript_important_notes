@@ -33,6 +33,7 @@ eg:
 expect(logs).toContain(' ready ')
 
 # export async function <my function> --> self defined function
+# at least need to write unit test for each function/class --> check chatgpt for examples
 
 # async function --> function to processing asynchronous aka can use await inside
 
