@@ -32,6 +32,8 @@ let stderr = '';
 eg:
 expect(logs).toContain(' ready ')
 
+# export async function <my function> --> self defined function
+
 # async function --> function to processing asynchronous aka can use await inside
 
 # throw new
