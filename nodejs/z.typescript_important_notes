@@ -41,3 +41,8 @@ expect(logs).toContain(' ready ')
 eg:
 throw new InputError('user passing wrong variable');
 
+# important libs from node.js
+import * as os from 'node.os' # operating libs
+import * as fs from 'node.fs' # file system libs
+import * as path from 'node.js' # path
+
