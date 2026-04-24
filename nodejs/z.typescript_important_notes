@@ -26,3 +26,5 @@ let stderr = '';
 
 # await --> polling
 
+# .toString('base64') --> convert the string to base64
+
