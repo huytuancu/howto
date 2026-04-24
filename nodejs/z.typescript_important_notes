@@ -28,3 +28,7 @@ let stderr = '';
 
 # .toString('base64') --> convert the string to base64
 
+# expect --> expect return to match
+eg:
+expect(logs).toContain(' ready ')
+
