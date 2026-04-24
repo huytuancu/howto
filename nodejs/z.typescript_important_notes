@@ -24,3 +24,5 @@ eg: typescript.ts
 eg:
 let stderr = '';
 
+# await --> polling
+
