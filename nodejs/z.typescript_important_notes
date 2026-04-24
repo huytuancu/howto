@@ -34,3 +34,7 @@ expect(logs).toContain(' ready ')
 
 # async function --> function to processing asynchronous aka can use await inside
 
+# throw new
+eg:
+throw new InputError('user passing wrong variable');
+
