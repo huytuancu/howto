@@ -29,11 +29,11 @@ output file: yourdomain.csr
 
 # Deploy on k8s cluster on a specific namespace
 
-kubectl create secret tls <secret-name> -n <name space> \
+kubectl create secret tls <tls-secret-name> -n <name space> \
   --cert=path/to/tls.crt \
   --key=path/to/tls.key
 
 # check after that
 kubectl get secret -n <name space>
 
-# make sure your helm chart to deploy your app | ingress configured correct certificate name
+# make sure your helm chart (deploy your app) | ingress configured correct <tls-secret-name>
