@@ -9,6 +9,7 @@ DNS.1 = example-1.example.com
 DNS.2 = example-2.example.com
 DNS.3 = example-3.example.com
 
-# prepare a configure file eg: https://web.mit.edu/crypto/openssl.cnf
+# prepare a configure file 
+eg: https://web.mit.edu/crypto/openssl.cnf
 
 # create a certificate signed request (csr)
