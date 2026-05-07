@@ -12,4 +12,8 @@ DNS.3 = example-3.example.com
 # step: prepare a configure file 
 eg: https://web.mit.edu/crypto/openssl.cnf
 
-# step: create a certificate signed request (csr)
+eg: saved to <my config file>.cnf for next step
+
+# step: create a CSR (certificate signed request)
+eg:
+openssl req -new -newkey rsa:2048 -nodes -keyout yourdomain.key -out yourdomain.csr -config <my config file>.cnf
