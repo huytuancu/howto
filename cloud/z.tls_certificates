@@ -9,11 +9,12 @@ DNS.1 = example-1.example.com
 DNS.2 = example-2.example.com
 DNS.3 = example-3.example.com
 
-# step: prepare a configure file 
+# step: prepare a configure .cnf file
 eg: https://web.mit.edu/crypto/openssl.cnf
 
 eg: saved to <my config file>.cnf for next step
 
 # step: create a CSR (certificate signed request)
 eg:
+bash
 openssl req -new -newkey rsa:2048 -nodes -keyout yourdomain.key -out yourdomain.csr -config <my config file>.cnf
