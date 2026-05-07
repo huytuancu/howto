@@ -18,3 +18,5 @@ eg: saved to <my config file>.cnf for next step
 eg:
 bash
 openssl req -new -newkey rsa:2048 -nodes -keyout yourdomain.key -out yourdomain.csr -config <my config file>.cnf
+
+output file: yourdomain.csr
