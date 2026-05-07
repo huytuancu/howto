@@ -20,3 +20,5 @@ bash
 openssl req -new -newkey rsa:2048 -nodes -keyout yourdomain.key -out yourdomain.csr -config <my config file>.cnf
 
 output file: yourdomain.csr
+
+# step: submit output yourdomain.csr on CA server site to get the certificate
