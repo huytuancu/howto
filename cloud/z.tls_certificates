@@ -9,6 +9,8 @@ DNS.1 = example-1.example.com
 DNS.2 = example-2.example.com
 DNS.3 = example-3.example.com
 
+###################################################################################################################
+
 # step: prepare a configure .cnf file
 eg: https://web.mit.edu/crypto/openssl.cnf
 
@@ -22,3 +24,16 @@ openssl req -new -newkey rsa:2048 -nodes -keyout yourdomain.key -out yourdomain.
 output file: yourdomain.csr
 
 # step: submit output yourdomain.csr on CA server site to get the certificate
+
+# step: download the certificate
+
+# Deploy on k8s cluster on a specific namespace
+
+kubectl create secret tls <secret-name> -n <name space> \
+  --cert=path/to/tls.crt \
+  --key=path/to/tls.key
+
+# check after that
+kubectl get secret -n <name space>
+
+# make sure your helm chart to deploy your app | ingress configured correct certificate name
