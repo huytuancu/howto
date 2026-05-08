@@ -28,6 +28,7 @@ output file: yourdomain.csr
 # step: download the certificate
 
 # Deploy on k8s cluster on a specific namespace
+# Make sure you configured correctly ~/.kube/config toward correct k8s cluster
 
 kubectl create secret tls <tls-secret-name> -n <name space> \
   --cert=path/to/tls.crt \
