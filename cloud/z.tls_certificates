@@ -21,7 +21,9 @@ eg:
 bash
 openssl req -new -newkey rsa:2048 -nodes -keyout yourdomain.key -out yourdomain.csr -config <my config file>.cnf
 
-output file: yourdomain.csr
+outputs: 
+yourdomain.csr
+yourdomain.key
 
 # step: submit output yourdomain.csr on CA server site to get the certificate
 
