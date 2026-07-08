@@ -10,4 +10,8 @@ create global variables for gitlab-ci.yml file
 # Code > Repository
 
 # Build > Pipelines
+
+# clone & push code from your development server
+- get PAT token from gitlab
+- update .netrc file
  
