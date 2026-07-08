@@ -14,4 +14,5 @@ create global variables for gitlab-ci.yml file
 # clone & push code from your development server
 - get PAT token from gitlab
 - update .netrc file
+- using git commands
  
