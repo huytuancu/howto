@@ -1,6 +1,10 @@
 # this file is a mess but you can search quickly tips and tricks if you like
 # latest update is on top :D 
 
+# export proxy
+export http_proxy="your_http_proxy"
+export https_proxy="your_https_proxy"
+
 # base64 encode user & pass
 echo -n "user:password" | base64
 
