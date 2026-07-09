@@ -1,4 +1,7 @@
 # https://www.w3schools.com/typescript/
+# typescript with nodejs
+https://www.w3schools.com/typescript/typescript_nodejs.php
+
 
 # typescript is maintained and updated by Microsoft
 # typescript is used to write then it will convert to javascript automatically
@@ -48,9 +51,13 @@ expect(logs).toContain(' ready ')
 eg:
 throw new InputError('user passing wrong variable');
 
-# typescript with nodejs
-https://www.w3schools.com/typescript/typescript_nodejs.php
-
+# interface --> an object in typescript
+eg:
+interface User {
+  id: number;
+  name: string;
+  email: string;
+}
 
 # important libs from node.js
 import * as os from 'node.os' # operating libs
