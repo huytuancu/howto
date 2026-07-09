@@ -15,6 +15,9 @@ it is not easy to remember rules in writing typescript, just understand the idea
 eg: typescript.ts
 
 # import import standard libs or plugin libs etc
+eg:
+
+impport { randomBytes } from 'node:crypto';
 
 # constant --> define variable
 
