@@ -59,6 +59,14 @@ interface User {
   email: string;
 }
 
+then declare:
+
+const user: User = {
+  id: 1,
+  name: "Max",
+  email: "max0987654321@gmail.com"
+};
+
 # important libs from node.js
 import * as os from 'node.os' # operating libs
 import * as fs from 'node.fs' # file system libs
