@@ -25,6 +25,8 @@ impport { randomBytes } from 'node:crypto';
 
 # function --> standard function
 
+# export function --> ?
+
 # let --> define local variable 
 eg:
 let stderr = '';
