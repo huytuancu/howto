@@ -1,3 +1,5 @@
 # naming
 eg: 
 xxx.test.ts file
+
+import { test_function } from 'your_ts_code_';
