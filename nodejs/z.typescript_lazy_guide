@@ -23,9 +23,9 @@ impport { randomBytes } from 'node:crypto';
 
 # constant --> define variable
 
-# function --> standard function
+# function --> standard function, is used on current file
 
-# export function --> ?
+# export function --> the function can be exported to be used by other files
 
 # let --> define local variable 
 eg:
