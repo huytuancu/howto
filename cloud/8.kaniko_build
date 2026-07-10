@@ -4,3 +4,13 @@
 # we need to deploy kaniko application on K8S before usingg it
 
 https://github.com/GoogleContainerTools/kaniko
+
+# Make sure to fid is able to connect Registry Server
+
+# Build
+/kaniko/executor \
+  --context $(CI_PROJECT_DIR)/build_contect \
+  --dockerfile $(CI_PROJECT_DIR)/Dockerfile \
+  --destination <your full image name having registry information>:<your image tag> \
+  --build-arg arg_=<???>
+  ...
