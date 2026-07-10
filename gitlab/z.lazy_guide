@@ -7,6 +7,18 @@ https://docs.gitlab.com/user/project/organize_work_with_projects/
 # settings > ci/cd > Variables
 create global variables for gitlab-ci.yml file
 
+// Key
+DOCKER_AUTH_CONFIG
+
+// Value
+{
+  "auths": {
+    "your_registry_without_https": {
+      "auth": "user:pass | base64" # --> convert user/pass to base 64 code before copying to
+    }
+  }
+}
+
 # Code > Repository
 
 # Build > Pipelines
