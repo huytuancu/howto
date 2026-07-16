@@ -5,7 +5,9 @@
 
 https://github.com/GoogleContainerTools/kaniko
 
-# Make sure to fid is able to connect Registry Server
+# Make sure fid is able to connect Registry Server
+mkdir -p /kaniko/.docker
+echo "${DOCKER_AUTH_CÒNIG}" > /kaniko/.docker/config.json # make sure .json is there
 
 # Build
 /kaniko/executor \
