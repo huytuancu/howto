@@ -25,10 +25,11 @@ DOCKER_AUTH_CONFIG
 # Build > Pipelines
 
 # clone & push code from your development server
-
-# config secrets from external servers
-https://docs.gitlab.com/ci/secrets/
 - get PAT token from gitlab
 - update .netrc file
 - using git commands
+
+# config secrets from external servers
+https://docs.gitlab.com/ci/secrets/
+
  
