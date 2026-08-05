@@ -3,6 +3,8 @@
 https://docs.gitlab.com/user/project/organize_work_with_projects/
 https://university.gitlab.com/
 
+# important: functional user configured in gitlab MUST have read/write permissions towards Docker Registry
+
 # settings > ci/cd > Runners
 
 # settings > ci/cd > Variables
