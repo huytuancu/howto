@@ -21,3 +21,5 @@ git config remote.origin.pushurl < >
 
 # check .git configuration
 .git/config # thís file stores important information of repo eg: url
+
+git fetch origin "refs/notes/*:refs/notes/*" # check git notes
