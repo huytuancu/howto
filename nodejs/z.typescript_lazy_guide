@@ -19,10 +19,11 @@ it is not easy to remember rules in writing typescript, just understand the idea
 # file name
 eg: typescript.ts
 
-# import import standard libs or plugin libs etc
+# import import standard , plugin , self defined libs etc
 eg:
 
 impport { randomBytes } from 'node:crypto';
+import { myFunction } from './myLib'; # myLib.ts is introduced
 
 # constant --> define variable
 
