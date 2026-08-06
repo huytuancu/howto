@@ -10,6 +10,13 @@ https://www.w3schools.com/typescript/typescript_nodejs.php
 # tutorial once you want to re-check on specific topic
 https://www.w3schools.com/typescript/
 
+# initiate a new object
+eg:
+const myUser = new templateUser({ # templateUser should be defined somewhere
+...
+});
+
+
 # describe
 usually used in .test.ts
 collects test cases into one group
