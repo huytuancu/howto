@@ -1,1 +1,5 @@
 git reset --hard origin/main # reset to main branch
+
+git add .
+git commit -m "your commit message"
+
