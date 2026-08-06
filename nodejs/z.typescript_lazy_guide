@@ -10,6 +10,10 @@ https://www.w3schools.com/typescript/typescript_nodejs.php
 # tutorial once you want to re-check on specific topic
 https://www.w3schools.com/typescript/
 
+# describe
+usually used in .test.ts
+collects test cases into one group
+
 # && AND !== NOT EQUAL
 
 # boolean variable
