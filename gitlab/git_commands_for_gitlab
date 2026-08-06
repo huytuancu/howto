@@ -1,6 +1,9 @@
+git remote add origin # run only one time on gitlab repo
+
 git reset --hard origin/main # reset to main branch
 git pull
 
 git add .
 git commit -m "your commit message"
+git push -u origin main
 
