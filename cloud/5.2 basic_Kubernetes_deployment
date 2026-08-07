@@ -1,5 +1,9 @@
 # create <>.yaml files. See pod.yaml, deployment.yaml, service.yanl, ingress.yaml examples in links below
 
+# create a k8s namespace
+
+# create a volume definition for the pods
+
 pod.yaml
 deployment.yaml
 # service.yanl
