@@ -1,5 +1,14 @@
 # create <>.yaml files. See pod.yaml, deployment.yaml, service.yanl, ingress.yaml examples in links below
 
+pod.yaml
+deployment.yaml
+# service.yanl
+key point is to bind to a port
+
+ingress.yaml 
+key point is to define DNS and TLS certificates etc
+
+
 # use kubectl commands to apply into the cluster
 kubectl appy -f <>.yaml
 
