@@ -23,6 +23,13 @@ git config remote.origin.pushurl < >
 .git/config # thís file stores important information of repo eg: url
 .gitmodules # URL inside
 
+# ref info
+eg:
+refs/users/ references per user
+refs/meta/
+refs/changes
+...
+
 git fetch origin "refs/notes/*:refs/notes/*" # check git notes
 
 
