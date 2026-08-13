@@ -1,5 +1,5 @@
-# check .git configuration
-.git/config # thís file stores important information of repo eg: url
+# git configuration
+.gitconfig # thís file stores important information of user and repo eg: url
 .gitmodules # URLs inside
 
 
