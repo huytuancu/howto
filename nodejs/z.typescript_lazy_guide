@@ -9,6 +9,10 @@ https://www.w3schools.com/typescript/typescript_nodejs.php
 # tutorial once you want to re-check on specific topic
 https://www.w3schools.com/typescript/
 
+# time in mili seconds
+eg:
+const TIME_MS = 100_000; # _ is a separate method. In this case it is 100000 milli seconds
+
 # .ts vs .tsx
 .ts --> normal typescript eg: write simple functions
 .tsx --> can inject JSX aka doing React or interact as web tags to visualize GUI
