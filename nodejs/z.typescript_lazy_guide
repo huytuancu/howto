@@ -2,13 +2,16 @@
 # typescript with nodejs
 https://www.w3schools.com/typescript/typescript_nodejs.php
 
-
 # typescript is maintained and updated by Microsoft
 # typescript is used to write then it will convert to javascript automatically
 # typescript is needed for node.js dev projects
 
 # tutorial once you want to re-check on specific topic
 https://www.w3schools.com/typescript/
+
+# .ts vs .tsx
+.ts --> normal typescript eg: write simple functions
+.tsx --> can inject JSX aka doing React or interact as web tags to visualize GUI
 
 # initiate a new object
 eg:
