@@ -72,6 +72,8 @@ expect(logs).toContain(' ready ')
 eg:
 throw new InputError('user passing wrong variable');
 
+# "export interface < > " can be used from other files
+
 # interface --> an object in typescript
 eg:
 interface User {
