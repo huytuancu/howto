@@ -5,7 +5,14 @@ https://university.gitlab.com/
 
 # important: functional user configured in gitlab MUST have read/write permissions towards Docker Registry
 
-# settings > ci/cd > Runners
+# Settings > Repository
+important settings there for repo
+
+# Settings > Merge requests
+Rules for merge requests etc
+
+# Settings > ci/cd > Runners
+Mandatory configure Runners (similar to Jenkins slave node) to trigger pipeline
 
 # settings > ci/cd > Variables
 create global variables for gitlab-ci.yml file
