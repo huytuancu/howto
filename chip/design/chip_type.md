@@ -1,3 +1,5 @@
-# power chip
+# power
 
 # DRAM
+
+# NAND flash
