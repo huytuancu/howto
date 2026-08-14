@@ -3,6 +3,9 @@
 https://docs.gitlab.com/user/project/organize_work_with_projects/
 https://university.gitlab.com/
 
+# External secrets
+https://docs.gitlab.com/ci/secrets/
+
 # important: functional user configured in gitlab MUST have read/write permissions towards Docker Registry
 
 # Settings > Repository
