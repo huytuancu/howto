@@ -3,6 +3,9 @@
 https://docs.gitlab.com/user/project/organize_work_with_projects/
 https://university.gitlab.com/
 
+# pipeline security --> important to know
+https://docs.gitlab.com/ci/pipeline_security/
+
 # External secrets
 https://docs.gitlab.com/ci/secrets/
 
