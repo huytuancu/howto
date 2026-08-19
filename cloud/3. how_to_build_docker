@@ -30,3 +30,8 @@ docker rm
 docker save
   eg: docker save -o <path for generated tar file> <image name>
 
+# command to check docker SHA (for security configuration insteaf of using docker tag)
+eg:
+docker pull node:18.17.1
+docker images --digests node:18.17.1
+
