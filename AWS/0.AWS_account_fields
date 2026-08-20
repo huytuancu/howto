@@ -2,6 +2,9 @@
 Username: 
 Password:
 
+Account ID:
+Log in to: 
+
 AWS Region
 eg: us-east-1
 
@@ -10,8 +13,7 @@ AWS Access Key ID:
 AWS Secret Access Key:
 
 # optional eg: for S3 storage
+S3 Endpoint:
 Bucket Name:
 
-Account ID:
 
-Log in to: 
