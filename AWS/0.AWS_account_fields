@@ -1,12 +1,16 @@
 # basic information for an AWS :
 Username: 
 Password:
+
 AWS Region
 eg: us-east-1
 
-AWS Access Key:
+AWS Access Key ID:
 
-AWS Secret Key:
+AWS Secret Access Key:
+
+# optional eg: for S3 storage
+Bucket Name:
 
 Account ID:
 
