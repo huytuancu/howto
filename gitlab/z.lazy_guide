@@ -43,7 +43,6 @@ DOCKER_AUTH_CONFIG
 - get PAT token from gitlab
 - update .netrc file
 - using git commands
-
 # config secrets from external servers
 https://docs.gitlab.com/ci/secrets/
 
