@@ -1,4 +1,4 @@
-# gitlab-ci.yml sample file
+# .gitlab-ci.yml sample file
 
 stages:
   - build
