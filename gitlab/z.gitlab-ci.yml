@@ -1,6 +1,6 @@
 # .gitlab-ci.yml sample file
 
-stages:
+stages: # main stages for gitlab-ci
   - build
   - test
   - deploy
@@ -30,7 +30,11 @@ deploy:
   stage: deploy
   image: alpine:latest
   script:
-    - echo "Deploying $APP_NAME..."
-    - echo "Deploy done!"
+    - | # can start writing bash from next line
+      echo "Deploying $APP_NAME..."
+      echo "Deploy done!"
   only:
     - main
+
+include:
+  - local: .gitlab/<your ci dir>/<your include>.yml # include external .yml file
