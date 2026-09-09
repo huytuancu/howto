@@ -57,6 +57,7 @@ git branch -M main
 
 git remote add origin https://gitlab.com/username/project.git
 
+# make sure you generated gitlab PAT (personal access token)
 git push -u origin main
 
 
