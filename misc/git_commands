@@ -1,3 +1,5 @@
+## Collecting basic git commands on Linux based and Windows if you like
+
 # git configuration
 .gitconfig # thís file stores important information of user and repo eg: url
 .gitmodules # URLs inside
@@ -24,8 +26,6 @@ git config branch.master.pushurl < >
 git config remote.origin.url https://<your domain>.com/<...>/
 git config remote.origin.pushurl < >
 
-
-
 git fetch origin "refs/notes/*:refs/notes/*" # check git notes
 
 # ref info
@@ -34,5 +34,13 @@ refs/users/ references per user
 refs/meta/
 refs/changes
 ...
+
+# git for windows eg: win 11
+ask chatgpt for command to install
+eg:
+winget install --id Git.Git -e --source winget
+
+then restart Visual Studio Code again then
+git --version
 
 
