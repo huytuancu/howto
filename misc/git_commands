@@ -43,4 +43,20 @@ winget install --id Git.Git -e --source winget
 then restart Visual Studio Code again then
 git --version
 
+cd "C:\your-project"
+git init
+
+git config --global user.name "your name matching on gitlab"
+git config --global user.email "your email"
+
+# make your change
+git add .
+git commit -m "Initial commit"
+
+git branch -M main
+
+git remote add origin https://gitlab.com/username/project.git
+
+git push -u origin main
+
 
