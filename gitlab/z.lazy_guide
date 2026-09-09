@@ -5,6 +5,7 @@ https://university.gitlab.com/
 
 # pipeline security --> important to know
 https://docs.gitlab.com/ci/pipeline_security/
+https://docs.gitlab.com/user/application_security/sast/
 
 # External secrets
 https://docs.gitlab.com/ci/secrets/
