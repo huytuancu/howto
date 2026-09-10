@@ -35,7 +35,7 @@ refs/meta/
 refs/changes
 ...
 
-# git for windows eg: win 11
+# git for windows eg: win , using visual stuido code
 ask chatgpt for command to install
 eg:
 winget install --id Git.Git -e --source winget
@@ -55,7 +55,7 @@ git commit -m "Initial commit"
 
 git branch -M main
 
-git remote add origin https://gitlab.com/username/project.git
+git remote add origin https://gitlab.com/<your project path>p<your repo repoyou>.git # only 1 time
 
 # make sure you generated gitlab PAT (personal access token)
 git push -u origin main
