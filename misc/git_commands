@@ -17,7 +17,7 @@ git pull --rebase
 git push origin HEAD:refs/for/master # push to HEAD aka latest on master branch
 
 # useful git config
-git config user.name < >
+git config --global user.name "FirstName LastName" # make sure it is idential/matching with user name on gitlab profile
 git config user.email < >
 
 git config branch.master.url < >
