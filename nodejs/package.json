@@ -1,4 +1,5 @@
 # https://www.w3schools.com/nodejs/nodejs_package_json.asp
+# package.json will define candidate versions to be installed
 {
   "description": "thís json file contains node versions as well as dependencies and their versions",
 
