@@ -28,11 +28,11 @@ git config remote.origin.pushurl < >
 
 git fetch origin "refs/notes/*:refs/notes/*" # check git notes
 
-# ref info
+# reference info
 eg:
 refs/users/ references per user
 refs/meta/
-refs/changes
+refs/changes/
 ...
 
 # git for windows eg: win , using visual stuido code
