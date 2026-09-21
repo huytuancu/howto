@@ -1,8 +1,0 @@
-# how to add binary built to PATH
-ENV PATH "$PATH:/.local/bin"
-
-# how to set variable
-
-eg:
-RUN export VARIABLE_1 = $(cat /secret/variable_1) && \
-    export VARIABLE_2 = $(cat /secret/variable_2) && \
