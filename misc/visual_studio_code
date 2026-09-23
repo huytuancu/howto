@@ -1,4 +1,4 @@
-# nowadays, Visual Studio is a common/famous tool for software development projects
+# nowadays, Visual Studio Code is a common/famous tool for software development projects
 # Visual Studio ìs free
 
 # start visual studio on Linux based
@@ -23,5 +23,5 @@ eg:
 Click Extensions
 Input your AI eg: Codex
 Install plugin
-Sign In using you account
+Sign In using your account # eg: your organization or private chatgpt account 
 Then start to use
