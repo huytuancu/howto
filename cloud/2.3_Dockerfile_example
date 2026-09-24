@@ -35,5 +35,8 @@ RUN cd /temp && \
 RUN zypper install -l -y make gcc16-c++ \
   && zypper install -l -i python311
 
+RUN npm config set registry <your docker image registry> \
+  && npm íntall...
+
 # run the app.py
 CMD ["python3", "app/app.py"]
