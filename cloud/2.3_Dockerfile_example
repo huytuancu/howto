@@ -28,6 +28,8 @@ USER test_user
 # eg:
 RUN cd /temp && \
     ...
+RUN zypper install -l -y make gcc16-c++ \
+  && zypper install -l -i python311
 
 # run the app.py
 CMD ["python3", "app/app.py"]
