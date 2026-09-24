@@ -1,5 +1,5 @@
-# simple example:
-# https://meghasharmaa704.medium.com/dockerfile-for-a-python-application-d88d6bf14a13
+# more information
+# https://docs.docker.com/get-started/
 
 # this is an example of Dockerfile for python
 # FROM defines based OS image where it is used to build together with codes in the repo
@@ -26,6 +26,10 @@ USER test_user
 COPY <source> <target>
 eg:
 
+# ADD download from source to target
+eg:
+ADD https://.../.../plantuml-x.x.x.jar /opt/plantuml.jar
+
 # execute bash command using RUN
 # RUN used to use to install eg: Python libraries or React libraries via commands pip3 install or npm install
 # or even more
@@ -33,7 +37,8 @@ eg:
 RUN cd /temp && \
     ...
 RUN zypper install -l -y make gcc16-c++ \
-  && zypper install -l -i python311
+  && zypper install -l -i python314 \
+  && ln -s /usr/bin/python3.14 /usr/bin/python3
 
 RUN npm config set registry <your docker image registry> \
   && npm íntall...
