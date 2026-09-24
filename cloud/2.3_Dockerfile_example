@@ -22,6 +22,10 @@ ENV APP_IMAGE_TITLE "$APP_IMAGE_TITLE"
 # eg:
 USER test_user
 
+# COPY
+COPY <source> <target>
+eg:
+
 # execute bash command using RUN
 # RUN used to use to install eg: Python libraries or React libraries via commands pip3 install or npm install
 # or even more
