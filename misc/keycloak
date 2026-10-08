@@ -1,2 +1,14 @@
 # keycloak_realm
 is used to generate authentication_token
+
+EXAMPLE:
+bash
+
+=(--retry-connrefused --retry 5 --retry-delau 15)
+
+ACCESS_TOKEN=$(curl -X POST ${RETRY_[@]} \
+  "http://localhost:8080/realms/myrealm/protocol/openid-connect/token" \
+  -H "Content-Type: application/x-www-form-urlencoded" \
+  -d "client_id=my-client" \
+  -d "client_secret=my-secret" \
+  -d "grant_type=client_credentials" )
