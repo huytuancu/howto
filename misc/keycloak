@@ -4,11 +4,13 @@ is used to generate authentication_token
 EXAMPLE:
 bash
 
-=(--retry-connrefused --retry 5 --retry-delau 15)
+REALM="http://localhost:8080/realms/myrealm"
 
-ACCESS_TOKEN=$(curl -X POST ${RETRY_[@]} \
-  "http://localhost:8080/realms/myrealm/protocol/openid-connect/token" \
+RETRY_OPTIONS=(--retry-connrefused --retry 5 --retry-delau 15)
+
+ACCESS_TOKEN=$(curl -s -X POST ${RETRY_OPTIONS[@]} \
+  "${REALM}/protocol/openid-connect/token" \
   -H "Content-Type: application/x-www-form-urlencoded" \
-  -d "client_id=my-client" \
-  -d "client_secret=my-secret" \
+  -d "username=${my-user}" \
+  -d "password=${my-pass}" \
   -d "grant_type=client_credentials" )
