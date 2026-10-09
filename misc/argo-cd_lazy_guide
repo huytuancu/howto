@@ -1,0 +1,57 @@
+Argo-CD is an optional tool to easily deploy micro service application automatically into K8S cluster using HELM-CHART. 
+See official link for more information:
+https://argo-cd.readthedocs.io/en/stable/core_concepts/
+
+https://argo-cd.readthedocs.io/en/stable/getting_started/
+
+----------------------------------------------------------------------------------------------------------------------
+Create argp-cd application manually
+----------------------------------------------------------------------------------------------------------------------
+
+key-fields:
+
+I. General
+
+Application Name: your_app_name
+
+PROJECT: 
+
+CLUSTER: https://kubernetes.default.svc
+# target namespace on K8S cluster
+NAMESPACE
+# repo url shall be git server or on storage server that stores HELM package
+
+II. Source
+
+REPO URL
+TARGET REVISION (git sha) --> important here
+PATH: eg chart
+
+III. Destination
+Cluster URL: https://kubernetes.default.svc
+
+IV. PẨRAMETERS > Select Helm in drop box and add
+  VALUES FILES=values.yaml
+
+----------------------------------------------------------------------------------------------------------------------
+Create argp-cd application from bash script
+----------------------------------------------------------------------------------------------------------------------
+# Configure CLI access through port forwarding
+export ARGOCD_OPTS='--port-forward-namespace argocd'
+
+# Login
+argocd login localhost:8080 --insecure \
+  --username admin
+
+# Create an application from a Git repository
+argocd app create guestbook \
+  --repo https://github.com/argoproj/argocd-example-apps.git \
+  --path guestbook \
+  --dest-server https://kubernetes.default.svc \
+  --dest-namespace default
+
+# Deploy and synchronize
+argocd app sync guestbook
+
+# Check status
+argocd app get guestbook
