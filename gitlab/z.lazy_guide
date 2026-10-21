@@ -5,7 +5,8 @@ https://university.gitlab.com/
 
 # pass CI/CD variables to Dockerfile
 - define CI/CI variables
-- fetch in gitlab-ci.yml file
+- fetch in gitlab-ci.yml file and build docker image by passing arguments
+eg:
 - fetch from Dockerfile
 eg:
 ARG PRODUCT_NUMBER
