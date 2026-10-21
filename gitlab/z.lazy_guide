@@ -3,6 +3,14 @@
 https://docs.gitlab.com/user/project/organize_work_with_projects/
 https://university.gitlab.com/
 
+# pass CI/CD variables to Dockerfile
+- define CI/CI variables
+- fetch in gitlab-ci.yml file
+- fetch from Dockerfile
+eg:
+ARG PRODUCT_NUMBER
+ARG PRODUCT_VERSION
+
 # pipeline security --> important to know
 https://docs.gitlab.com/ci/pipeline_security/
 https://docs.gitlab.com/user/application_security/sast/
