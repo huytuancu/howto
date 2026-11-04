@@ -1,12 +1,19 @@
 # .gitlab-ci.yml sample file
 
 stages: # main stages for gitlab-ci
+  - init
   - build
   - test
   - deploy
 
 variables:
   APP_NAME: "my-app"
+
+init:
+  stage: init
+  script:
+    - |
+      echo ""
 
 build:
   stage: build
