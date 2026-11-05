@@ -8,16 +8,27 @@ stages: # main stages for gitlab-ci
 
 variables:
   APP_NAME: "my-app"
+  ART_URL: "..."
+  NAME_SPACE: "" # namespace on k8s
+  
 
 init:
   stage: init
   script:
     - |
-      echo ""
+      echo "$CI_PROJECT_DIR" > my_init.env
+      echo "$CI_JOB_ID" >> my_init.env
+      ...
+  artifacts:
+    report:
+      dotenv: my_init.env
 
 build:
   stage: build
   image: node:20
+  needs:
+    - job: init
+      artifacts: true
   script:
     - npm ci
     - npm run build
