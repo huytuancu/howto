@@ -1,4 +1,6 @@
 # .gitlab-ci.yml sample file
+# some basic notes
+# Build > Pipelines: check result here
 
 stages: # main stages for gitlab-ci
   - init
